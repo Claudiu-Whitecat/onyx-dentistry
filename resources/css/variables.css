@@ -1,0 +1,99 @@
+:root {
+    /* color palette */
+
+    --clr-brand: 	hsl(19, 87%, 60%);
+    --clr-brand-50: hsl(19, 87%, 50%);
+
+    --clr-primary: 	hsl(0, 100%, 66%);
+    --clr-secondary: hsl(257, 73%, 74%);
+    --clr-tertiary: hsl(179, 64%, 54%);
+
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-black: hsl(0, 0%, 0%);
+
+    --clr-grey-100: hsl(0, 0%, 35%);
+    --clr-grey-80: hsl(0, 0%, 20%);
+    --clr-grey-50: hsl(0, 0%, 50%);
+    --clr-grey-20: hsl(0, 0%, 80%);
+    --clr-grey-5: hsl(0, 0%, 95%);
+
+    --clr-tertiary-48: hsl(179, 64%, 48%);
+    --clr-tertiary-25: hsl(179, 64%, 25%);
+    --clr-tertiary-15: hsl(179, 64%, 15%);
+
+    --clr-success: hsl(121, 35%, 51%);
+    --clr-danger: hsl(0, 98%, 65%);
+    --clr-neutral: hsl(203, 99%, 47%);
+
+    /* FONTS */
+    --system-fonts: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans',
+    source-sans-pro;
+
+    /* FONT-FAMILIES */
+    --ff-base: 'Satoshi', var(--system-fonts), sans-serif;
+    --ff-secondary: 'Barlow', var(--system-fonts), sans-serif;
+
+    /* FONT-WEIGHTS */
+    --fw-thin: 100;
+    --fw-ultralight: 200;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-extrabold: 800;
+    --fw-black: 900;
+
+    /* FONT-SIZES */
+    --fs-375: 0.8125rem;
+    --fs-380: 0.875rem;
+    --fs-400: 1rem;
+    --fs-410: 1.125rem;
+    --fs-430: 1.25rem;
+    --fs-450: 1.5rem;
+    --fs-490: 1.875rem;
+    --fs-500: 2rem;
+    --fs-550: 2.5rem;
+    --fs-600: 3rem;
+    --fs-650: 3.5rem;
+    --fs-700: 4rem;
+    --fs-1050: 7.5rem;
+
+    --fs-xs: 0.99rem;
+    --lh-xs: 1.067;
+    --fs-sm: 1.06rem;
+    --lh-sm: 1.067;
+    --fs-md: 1.13rem;
+    --lh-md: 1.067;
+    --fs-lg: 1.2rem;
+    --lh-lg: 1.067;
+    --fs-xl: 1.28rem;
+    --lh-xl: 1.067;
+    --fs-2xl: 1.36rem;
+    --lh-2xl: 1.067;
+    --fs-3xl: 1.46rem;
+    --lh-3xl: 1.067;
+    --fs-4xl: 1.55rem;
+    --lh-4xl: 1.067;
+    --fs-5xl: 1.67rem;
+    --lh-5xl: 1.067;
+
+    /* LETTER SPACING */
+    --ls-02: calc(-0.2 * 0.01em);
+    --ls-05: calc(-0.5 * 0.01em);
+    --ls-1: calc(-1 * 0.01em);
+    --ls-12: calc(-1.2 * 0.01em);
+    --ls-15: calc(-1.5 * 0.01em);
+    --ls-2: calc(-2 * 0.01em);
+
+    /* SPACINGS  */
+    --gap-xs: 0.5rem;
+    --gap-s: 1rem;
+    --gap-l: 2rem;
+    --gap-xl: 3rem;
+    --gap-xxxl: 5.5rem;
+
+    /* TRANSITIONS */
+    --ease-in-sine: cubic-bezier(0.12, 0, 0.39, 0);
+    --ease-out-sine: cubic-bezier(0.61, 1, 0.88, 1);
+}
