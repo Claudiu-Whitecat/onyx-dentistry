@@ -49,14 +49,16 @@
     --fs-380: 0.875rem;
     --fs-400: 1rem;
     --fs-410: 1.125rem;
-    --fs-430: 1.25rem;
+    --fs-425: 1.25rem;
     --fs-450: 1.5rem;
     --fs-490: 1.875rem;
     --fs-500: 2rem;
+    --fs-525: 2.25rem;
     --fs-550: 2.5rem;
     --fs-600: 3rem;
     --fs-650: 3.5rem;
     --fs-700: 4rem;
+    --fs-750: 4.5rem;
     --fs-1050: 7.5rem;
 
     --fs-xs: 0.99rem;
@@ -96,4 +98,5 @@
     /* TRANSITIONS */
     --ease-in-sine: cubic-bezier(0.12, 0, 0.39, 0);
     --ease-out-sine: cubic-bezier(0.61, 1, 0.88, 1);
+    --expo-smoothing: cubic-bezier(0.16, 1, 0.3, 1);
 }

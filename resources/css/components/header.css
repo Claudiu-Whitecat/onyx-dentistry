@@ -1,0 +1,122 @@
+.dropdown-menu .header_link  {
+    border-bottom: 1px solid black;
+    padding-block: 0.25rem;
+}
+.dropdown-menu .header_link:hover {
+    color: var(--clr-secondary);
+}
+.dropdown-menu .header_link:hover:after {
+    content: unset;
+}
+header {
+    position: relative;
+    width: 100%;
+}
+.header-info-bar {
+    background-color: var(--clr-secondary);
+    padding-block: 1rem;
+    padding-inline: 0;
+}
+body {
+    overflow: auto;
+}
+body.hamburger-open {
+    overflow: hidden;
+}
+body.hamburger-open header {
+    position: fixed;
+    background-color: var(--clr-black);
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+}
+body.hamburger .header_branding,
+.hamburger.active + .header_primary-navigation {
+    padding: 1rem 0;
+}
+.header_logo__mobile {
+    display: none;
+}
+body.hamburger-open .header_logo__mobile {
+    display: block;
+}
+body.hamburger-open .header_logo__desktop,
+body.hamburger-open .hide {
+    display: none;
+}
+.header-element {
+    font-size: var(--fs-380);
+    color: var(--clr-white);
+    font-style: normal;
+}
+.header-info--content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-contact--list,
+.social-media--list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1.25rem;
+}
+
+.header_primary-navigation {
+    margin-inline: auto 2rem;
+}
+
+.header_link {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-medium);
+    letter-spacing: var(--ls-05);
+    text-transform: capitalize;
+    color: var(--clr-tertiary-15);
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s var(--expo-smoothing);
+}
+.header_link.active {
+    color: var(--clr-tertiary-25);
+    transition: all 0.3s var(--expo-smoothing);
+}
+.header_link.active::after {
+    content: '';
+    display: block;
+    visibility: visible;
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 0.5s var(--expo-smoothing);
+}
+
+.header_branding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 1.5rem 0;
+}
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+}
+.header-element .link-button {
+    color: var(--clr-white);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .header_link:hover {
+        color: var(--clr-tertiary-25);
+        transition: all 300ms var(--expo-smoothing);
+    }
+    .header_link:hover::after {
+        visibility: visible;
+        transform: translateX(0);
+        opacity: 1;
+        transition: all 300ms var(--expo-smoothing);
+    }
+}

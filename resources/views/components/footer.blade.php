@@ -1,46 +1,42 @@
 <footer>
     <div class="container">
         <div class="footer_content">
-            <!-- <img class="footer_logo desktop" src="assets/images/logo-footer-sobi.svg"
-              alt="TEXT: A Publicis Groupe Initiative. School of Big Ideas Creative." decoding="async" loading="lazy" />
-            <img class="footer_logo mobile" src="assets/images/logo-footer-sobi--mobile.svg"
-              alt="TEXT: A Publicis Groupe Initiative. School of Big Ideas Creative." decoding="async" loading="lazy" /> -->
             <nav class="footer_navigation" aria-label="Onyx Dentistry Secondary Navigation">
-                <ul role="menubar" class="footer-navigation_holder">
-                    <li role="none" class="footer-navigation_header">
+                <ul  class="footer-navigation_holder">
+                    <li class="footer-navigation_header">
                         <p>Resurse</p>
                     </li>
-                    <li role="none">
-                        <x-nav-link class="footer_link body-regular" type="anchor" role="menuitem" :href="'/blog'"  :active="request()->is('blog')" >
+                    <li role="menuitem">
+                        <x-nav-link class="footer_link body-regular" type="anchor" :href="'/blog'"  :active="request()->is('blog')" >
                             Blog
                         </x-nav-link>
                     </li>
-                    <li role="none">
-                        <x-nav-link class="footer_link body-regular" type="anchor" role="menuitem" :href="'/doctori'"  :active="request()->is('doctori')" >
+                    <li role="menuitem">
+                        <x-nav-link class="footer_link body-regular" type="anchor" :href="'/doctori'"  :active="request()->is('doctori')" >
                             Doctori
                         </x-nav-link>
                     </li>
-                    <li role="none">
-                        <x-nav-link class="footer_link body-regular" type="anchor" role="menuitem" :href="'/servicii'"  :active="request()->is('servicii')" >
+                    <li role="menuitem">
+                        <x-nav-link class="footer_link body-regular" type="anchor" :href="'/servicii'"  :active="request()->is('servicii')" >
                             Servicii
                         </x-nav-link>
                     </li>
-                    <li role="none">
-                        <x-nav-link class="footer_link body-regular" type="anchor" role="menuitem" :href="'/preturi'"  :active="request()->is('preturi')" >
+                    <li role="menuitem">
+                        <x-nav-link class="footer_link body-regular" type="anchor" :href="'/preturi'"  :active="request()->is('preturi')" >
                             Prețuri
                         </x-nav-link>
                     </li>
-                    <li role="none">
-                        <x-nav-link class="footer_link body-regular" type="anchor" role="menuitem" :href="'/contact'"  :active="request()->is('contact')" >
+                    <li role="menuitem">
+                        <x-nav-link class="footer_link body-regular" type="anchor" :href="'/contact'"  :active="request()->is('contact')" >
                             Contact
                         </x-nav-link>
                     </li>
                 </ul>
-                <ul role="menubar" class="footer-navigation_holder">
-                    <li role="none" class="footer-navigation_header">
+                <ul  class="footer-navigation_holder">
+                    <li class="footer-navigation_header">
                         <p>Date de contact</p>
                     </li>
-                    <li role="none">
+                    <li role="menuitem">
                         <p class="footer-navigation_text">
                             Adresă
                         </p>
@@ -48,7 +44,7 @@
                             București, Str. Turda 118, Bloc 37
                         </p>
                     </li>
-                    <li role="none">
+                    <li role="menuitem">
                         <p class="footer-navigation_text">
                             Telefon
                         </p>
@@ -56,7 +52,7 @@
                             <a class="link-button " href="tel:0765928071">0765.928.071</a>
                         </p>
                     </li>
-                    <li role="none">
+                    <li role="menuitem">
                         <p class="footer-navigation_text">
                             Email
                         </p>
@@ -66,16 +62,16 @@
                         </p>
                     </li>
                 </ul>
-                <ul role="menubar" class="footer-navigation_holder">
-                    <li role="none" class="footer-navigation_header">
+                <ul  class="footer-navigation_holder">
+                    <li class="footer-navigation_header">
                         <p>Locație</p>
                     </li>
                     <li>
-                        <img class="placeholder-map" src="images/placeholder-map.png"/>
+                        <img alt="Placeholder image" class="placeholder-map" src="{{asset('images/placeholder-map.png')}}"/>
                     </li>
                 </ul>
-                <ul role="menubar" class="footer-navigation_holder">
-                    <li role="none" class="footer-navigation_header">
+                <ul  class="footer-navigation_holder">
+                    <li class="footer-navigation_header">
                         <p>Program</p>
                     </li>
                     <li>

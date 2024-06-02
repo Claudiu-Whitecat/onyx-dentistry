@@ -38,40 +38,6 @@
                 <span class="line"></span>
                 <span class="line"></span>
             </button>
-            {{--            <nav class="header_primary-navigation" aria-label="Onyx Dentistry Main Navigation">--}}
-            {{--                <ul role="menubar" class="primary-navigation_holder">--}}
-            {{--                    <?php foreach ($headerLinks as $link => $headerLink) { ?>--}}
-            {{--                    <li role="none">--}}
-            {{--                            <?php if($headerLink['hasDropdown'] == 1) { ?>--}}
-            {{--                        <div x-data="{ open: false }" @mouseenter="open = true">--}}
-            {{--                            <button class="header_link body-regular"  @click="open = ! open">--}}
-            {{--                                    <?= $headerLink['title'] ?>--}}
-            {{--                                <div x-show="open" @click.outside="open = false" >--}}
-            {{--                                    <ul>--}}
-            {{--                                            <?php if(!$headerLink['dropdownItems'] == null) { ?>--}}
-            {{--                                            <?php foreach($headerLink['dropdownItems'] as $dropdownItem) { ?>--}}
-            {{--                                        <li role="none">--}}
-            {{--                                            <a class="header_link body-regular" href="<?= $dropdownItem['link'] ?>" role="menuitem" >--}}
-            {{--                                                    <?= $dropdownItem['title'] ?>--}}
-            {{--                                            </a>--}}
-            {{--                                        </li>--}}
-            {{--                                        <?php } ?>--}}
-            {{--                                        <?php } ?>--}}
-            {{--                                    </ul>--}}
-            {{--                                </div>--}}
-            {{--                            </button>--}}
-            {{--                        </div>--}}
-            {{--                        <?php } else { ?>--}}
-            {{--                        <a class="header_link body-regular <?= $headerLink['class'] ?>" href="<?= $headerLink['link'] ?>" role="menuitem" >--}}
-            {{--                                <?= $headerLink['title'] ?>--}}
-            {{--                        </a>--}}
-            {{--                        <?php } ?>--}}
-            {{--                    </li>--}}
-            {{--                    <?php } ?>--}}
-            {{--                </ul>--}}
-            {{--            </nav>--}}
-
-
             <nav class="header_primary-navigation" aria-label="Onyx Dentistry Main Navigation">
                 <ul role="menubar" class="primary-navigation_holder">
                     <li role="none">
@@ -89,7 +55,7 @@
                             Doctori
                         </x-nav-link>
                     </li>
-                    <li>
+                    <li x-data="{open:false}" >
                         <x-nav-link type="button" :hasSubmenu="true" >
                             Servicii
                             <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-dropdown" viewBox="0 0 20 20" fill="currentColor">

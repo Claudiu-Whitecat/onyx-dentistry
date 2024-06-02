@@ -8,9 +8,12 @@
     "devDependencies": {
         "axios": "^1.6.4",
         "laravel-vite-plugin": "^1.0.0",
+        "prettier": "^3.2.5",
+        "prettier-plugin-blade": "^2.1.13",
         "vite": "^5.0.0"
     },
     "dependencies": {
+        "alpinejs": "^3.13.10",
         "glob": "^10.3.15"
     }
 }
