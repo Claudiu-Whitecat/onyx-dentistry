@@ -11,20 +11,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{asset('images/meta/favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('images/meta/favicon-16x16.png')}}">
 
+    <!-- FONTS -->
+    {{-- Loads Default Font - Poppins --}}
+    @googlefonts
+    {{-- Loads Inter--}}
+    @googlefonts('primary-font')
+    {{-- Loads Barlow Condensed--}}
+    @googlefonts('secondary-font')
     @vite('resources/js/app.js')
-{{--    <!-- FONTS -->--}}
-{{--    <link rel="stylesheet" href="https://use.typekit.net/gkr7kor.css" />--}}
-{{--    <link rel="stylesheet" href="{{ asset('fonts/stylesheet.css')}}" />--}}
-{{--    <!-- CSS -->--}}
-{{--    <link rel="stylesheet" href="{{ asset('css/reset.css')}}" media="screen" type="text/css" />--}}
-{{--    <link rel="stylesheet" href="{{ asset('css/variables.css')}}" media="screen" type="text/css" />--}}
-{{--    <link rel="stylesheet" href="{{ asset('css/app.css')}}" media="screen" type="text/css" />--}}
-{{--    <link rel="stylesheet" href="{{ asset('css/main.css')}}" media="screen" type="text/css" />--}}
 
-{{--    <script defer src="{{ asset('js/app.js')}}"></script>--}}
-
-    <!-- JS -->
-{{--    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>--}}
     <script src="https://kit.fontawesome.com/038dcaac05.js" defer crossorigin="anonymous"></script>
 
 </head>

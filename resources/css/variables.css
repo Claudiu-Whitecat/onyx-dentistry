@@ -30,8 +30,8 @@
     source-sans-pro;
 
     /* FONT-FAMILIES */
-    --ff-base: 'Satoshi', var(--system-fonts), sans-serif;
-    --ff-secondary: 'Barlow', var(--system-fonts), sans-serif;
+    --ff-base: 'Inter', var(--system-fonts), sans-serif;
+    --ff-headlines: 'Barlow Condensed', var(--system-fonts), sans-serif;
 
     /* FONT-WEIGHTS */
     --fw-thin: 100;
@@ -99,4 +99,13 @@
     --ease-in-sine: cubic-bezier(0.12, 0, 0.39, 0);
     --ease-out-sine: cubic-bezier(0.61, 1, 0.88, 1);
     --expo-smoothing: cubic-bezier(0.16, 1, 0.3, 1);
+}
+.ff-base {
+    --_variable-weight: 400;
+    font-family: var(--ff-base);
+    font-optical-sizing: auto;
+    font-weight: var(--_variable-weight);
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
 }
