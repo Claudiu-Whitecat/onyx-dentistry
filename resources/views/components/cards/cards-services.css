@@ -1,0 +1,59 @@
+.card-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+.card-services--heading {
+    font-size: var(--fs-450);
+    font-weight: var(--fw-medium);
+}
+.card-services--paragraph {
+    max-width: 30ch;
+}
+.card-services--image {
+    position: relative;
+    overflow-y: hidden;
+}
+.card-services--image img {
+    width: 100%;
+}
+.card-services--image::after {
+    --_size: 7rem  /* 125/16 */;
+    content: '';
+    width: var(--_size);  /* 120/16 */
+    height: calc(var(--_size) / 1.1111); /* 100px */
+    bottom: -2.25rem;
+    left: calc((100% - var(--_size)) / 2);
+    position: absolute;
+}
+.card-services:nth-of-type(1) .card-services--image::after {
+    background: url('./images/decoration-cards-shape-1.svg') center/cover no-repeat;
+}
+.card-services:nth-of-type(2) .card-services--image::after {
+    --_size: 10rem;
+    height: 8.25rem;
+    bottom: -4.5rem;
+    background: url('./images/decoration-cards-shape-2.svg') center/cover no-repeat;
+}
+.card-services:nth-of-type(3) .card-services--image::after {
+    background: url('./images/decoration-cards-shape-3.svg') center/cover no-repeat;
+}
+.decorative-icon {
+    width: 100%;
+}
+.decorative-icon--holder {
+    --_size: 3.25rem  /* 60/16 */;
+    width: 100%;
+    max-width: var(--_size);
+    height: var(--_size);
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: calc((100% - var(--_size)) / 2);
+}

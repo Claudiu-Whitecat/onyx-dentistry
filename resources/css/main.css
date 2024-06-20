@@ -104,7 +104,7 @@ span.one_line {
     transition: all 400ms var(--expo-smoothing);
 }
 .social-media--list a:hover {
-    background-color: hsl(0, 0%, 50%, 1);
+    background-color: hsl(0, 0%, 28.6%);
     transition: all 600ms var(--expo-smoothing);
 }
 .social-media--list a:hover .social-icon {
@@ -469,41 +469,15 @@ header .social-icon {
     color: var(--clr-grey-100);
     text-align: center;
 }
-.card-services {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.25rem;
-}
-.card-services--heading {
-    font-size: var(--fs-450);
-    font-weight: var(--fw-medium);
-}
-.card-services--paragraph {
-    max-width: 30ch;
-}
+
+
 .grid-even-columns {
     --grid-min: 20rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--grid-min, 20ch)), 1fr));
     gap: 0 2rem;
 }
-.card-services--image {
-    position: relative;
-}
-.card-services--image img {
-    width: 100%;
-}
-.card-services--image::after {
-    content: '';
-    background-color: red;
-    border: red;
-    width: 7.5rem;
-    height: 8.75rem;
-    top: 0;
-    position: absolute;
-}
+.
 @media (hover: hover) and (pointer: fine) {
     .button:hover {
         transition: all 400ms var(--ease-in-sine);

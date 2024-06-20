@@ -1,10 +1,10 @@
 <head lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>Onyx-Dentistry</title>
-    <meta name="description" content="Cabinet stomatologic Onyx Dentistry situat în zona Ion Mihalache, București." />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Cabinet stomatologic Onyx Dentistry situat în zona Ion Mihalache, București."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="icon" type="image/x-icon" href="
     {{asset('images/meta/favicon.ico')}}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{asset('images/meta/apple-touch-icon.png')}}">
@@ -23,9 +23,9 @@
     <script src="https://kit.fontawesome.com/038dcaac05.js" defer crossorigin="anonymous"></script>
 
 </head>
-@include('components.header')
+@include('components.header.header')
 
 <main>
     {{ $slot }}
 </main>
-@include('components.footer')
+@include('components.footer.footer')
