@@ -6,3 +6,6 @@
 @import "../views/components/header/header.css";
 @import "../views/components/footer/footer.css";
 @import "../views/components/cards/cards-services.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
