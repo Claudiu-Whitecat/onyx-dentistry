@@ -4,13 +4,18 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
 
 
-class BlogPost extends Model
+class BlogPost extends Model implements HasMedia
 {
-    use HasFactory;
+    use HasFactory, InteractsWithMedia;
 
-    protected $fillable = ['blog_category_id', 'title', 'slug', 'content', 'is_published'];
+    protected $fillable = ['blog_category_id', 'title', 'slug', 'content', 'author','is_published'];
+    protected $casts = [
+        'is_published' => 'boolean',
+    ];
 
     public function category()
     {

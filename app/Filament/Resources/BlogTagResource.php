@@ -17,8 +17,9 @@ class BlogTagResource extends Resource
 {
     protected static ?string $model = BlogTag::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-s-tag';
     protected static ?string $navigationGroup = 'Blog';
+    protected static ?string $modelLabel = 'Tags';
     public static function form(Form $form): Form
     {
         return $form
