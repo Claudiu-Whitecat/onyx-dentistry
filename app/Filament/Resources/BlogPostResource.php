@@ -7,9 +7,13 @@ use App\Filament\Resources\BlogPostResource\RelationManagers;
 use App\Models\BlogPost;
 use Filament\Forms;
 use Filament\Forms\Components\Fieldset;
+use Filament\Forms\Components\Grid;
+use Filament\Forms\Components\Group;
 use Filament\Forms\Components\RichEditor;
+use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
+use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Form;
@@ -37,31 +41,63 @@ class BlogPostResource extends Resource
     {
         return $form
             ->schema([
-                Fieldset::make('New Post')
+                Grid::make()
                     ->schema([
-                        TextInput::make('title')
-                            ->required()
-                            ->live(onBlur: true)
-                            ->afterStateUpdated(
-                                function(Get $get, Set $set, ?string $old, ?string $state) {
-                                    if(($get('slug') ?? '') !== Str::slug($old)){
-                                        return;
+                        Group::make()->schema([
+                            TextInput::make('title')
+                                ->required()
+                                ->live(onBlur: true)
+                                ->afterStateUpdated(
+                                    function(Get $get, Set $set, ?string $old, ?string $state) {
+                                        if(($get('slug') ?? '') !== Str::slug($old)){
+                                            return;
+                                        }
+                                        $set('slug', Str::slug($state));
                                     }
-                                    $set('slug', Str::slug($state));
-                                }
-                            ),
-                        TextInput::make('slug')
-                            ->required()
-                            ->live(onBlur: true),
-                        TextInput::make('author')
-                            ->required(),
-                        Select::make('Category')
-                            ->relationship('category', 'name'),
-                        RichEditor::make('content'),
-                        SpatieMediaLibraryFileUpload::make('Thumbnail')
-                            ->collection('posts'),
-                        Toggle::make('is_published'),
-                    ]),
+                                ),
+                            TextInput::make('slug')
+                                ->required()
+                                ->live(onBlur: true),
+
+                            Select::make('Category')
+                                ->required()
+                                ->relationship('category', 'name'),
+
+                            RichEditor::make('content')
+                                ->required()
+                                ->columnSpan($span = 2),
+                        ]),
+                        Group::make()
+                            ->schema([
+                                Section::make('Image')
+                                    ->collapsible()
+                                    ->schema([
+                                        SpatieMediaLibraryFileUpload::make('Thumbnail')
+                                            ->collection('posts')
+                                            ->columnSpan($span = 1)
+                                            ->disk('public')
+                                            ->directory('thumbnails')
+                                    ]),
+                                ]),
+                                Section::make('Meta')
+                                    ->schema([
+                                        Select::make('tags')
+                                            ->label('Tags')
+                                            ->columnSpan($span = 1)
+                                            ->required()
+                                            ->multiple()
+                                            ->relationship('tags', 'name'),
+                                        Select::make('Author')
+                                            ->label('Author')
+                                            ->columnSpan($span = 1)
+                                            ->required()
+                                            ->relationship('author', 'name'),
+                                        Toggle::make('is_published')
+                                            ->columnSpan($span = 1),
+                            ]),
+
+                        ]),
+
 
             ]);
     }
@@ -72,8 +108,10 @@ class BlogPostResource extends Resource
             ->columns([
                 TextColumn::make('id')->sortable(),
                 TextColumn::make('title')->limit(50)->sortable(),
+                TextColumn::make('category.name')->limit(50)->sortable(),
+                TextColumn::make('author.name')->sortable(),
+                TextColumn::make('tags.name')->limit(50),
                 SpatieMediaLibraryImageColumn::make('Thumbnail')->collection('posts'),
-                TextColumn::make('author')->sortable(),
                 CheckboxColumn::make('is_published'),
             ])
             ->filters([

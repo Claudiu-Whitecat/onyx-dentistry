@@ -6,12 +6,18 @@ use App\Filament\Resources\BlogTagResource\Pages;
 use App\Filament\Resources\BlogTagResource\RelationManagers;
 use App\Models\BlogTag;
 use Filament\Forms;
+use Filament\Forms\Components\Grid;
+use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
+use Filament\Forms\Get;
+use Filament\Forms\Set;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Str;
 
 class BlogTagResource extends Resource
 {
@@ -24,7 +30,23 @@ class BlogTagResource extends Resource
     {
         return $form
             ->schema([
-                //
+                Grid::make()
+                    ->schema([
+                        TextInput::make('name')
+                            ->required()
+                            ->live(onBlur: true)
+                            ->afterStateUpdated(
+                                function(Get $get, Set $set, ?string $old, ?string $state) {
+                                    if(($get('slug') ?? '') !== Str::slug($old)){
+                                        return;
+                                    }
+                                    $set('slug', Str::slug($state));
+                                }
+                            ),
+                        TextInput::make('slug')
+                            ->required()
+                            ->live(onBlur: true),
+                    ])
             ]);
     }
 
@@ -32,7 +54,9 @@ class BlogTagResource extends Resource
     {
         return $table
             ->columns([
-                //
+                TextColumn::make('id')->sortable(),
+                TextColumn::make('name')->limit(50)->sortable(),
+                TextColumn::make('slug')->limit(50)->sortable(),
             ])
             ->filters([
                 //
