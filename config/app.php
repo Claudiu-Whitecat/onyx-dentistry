@@ -155,10 +155,11 @@ return [
     |
     */
 
-    'providers' => ServiceProvider::defaultProviders()->merge([
+    'providers' => ServiceProvider::defaultProviders()->merge(providers: [
         /*
          * Package Service Providers...
          */
+
 
         /*
          * Application Service Providers...
@@ -169,7 +170,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\Filament\AdminPanelProvider::class,
         App\Providers\RouteServiceProvider::class,
-    ])->toArray(),
+    ])->toArray(
+        'BarryvdhDebugbarServiceProvider',
+    ),
 
     /*
     |--------------------------------------------------------------------------
@@ -183,7 +186,9 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
-        // 'Example' => App\Facades\Example::class,
-    ])->toArray(),
+        'Debugbar' => 'BarryvdhDebugbarFacade',
+    ])->toArray(
+
+    ),
 
 ];

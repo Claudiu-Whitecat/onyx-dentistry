@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PriceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('homepage');
 });
+
+Route::group(['prefix'=> 'doctors'], function (){
+    Route::get('/', function(){
+        return view('doctors.index');
+    });
+    Route::get('/template', function() {
+        return view('doctors.template');
+    });
+});
+
+Route::resource( 'prices', PriceController::class)
+    ->only(['index', 'show']);

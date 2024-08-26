@@ -1,0 +1,14 @@
+<tr>
+    <td>
+        {{$price->name}}
+    </td>
+    <td>
+        {{$price->priceCategories->name}}
+    </td>
+    <td>
+        {{$price->value}}
+    </td>
+    <td>
+        {{$price->priceCurrencies->name}}
+    </td>
+</tr>

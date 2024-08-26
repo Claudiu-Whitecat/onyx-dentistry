@@ -78,7 +78,7 @@ class PricesSeeder extends Seeder
                 ],
                 [
                     'id' => 7,
-                    'price_categories_id' => 6,
+                    'price_categories_id' => 5,
                     'name' => 'Tratament endodontic pluriradiculari',
                     'price_currency_id' => 1,
                     'value' => '600',
@@ -88,7 +88,7 @@ class PricesSeeder extends Seeder
                 ],
                 [
                     'id' => 8,
-                    'price_categories_id' => 6,
+                    'price_categories_id' => 5,
                     'name' => 'Tratament endodontic molar de minte',
                     'price_currency_id' => 1,
                     'value' => '800',
@@ -98,7 +98,7 @@ class PricesSeeder extends Seeder
                 ],
                 [
                     'id' => 9,
-                    'price_categories_id' => 6,
+                    'price_categories_id' => 5,
                     'name' => 'Retratament endodontic monoradiculari',
                     'price_currency_id' => 1,
                     'value' => '500',
@@ -108,7 +108,7 @@ class PricesSeeder extends Seeder
                 ],
                 [
                     'id' => 10,
-                    'price_categories_id' => 6,
+                    'price_categories_id' => 5,
                     'name' => 'Retratament endodontic pluriradiculari',
                     'price_currency_id' => 1,
                     'value' => '700',
