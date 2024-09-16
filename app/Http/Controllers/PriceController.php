@@ -13,16 +13,18 @@ class PriceController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index():View
+    public function index(Request $request):View
     {
 
         $priceCategories = Price::query()
-            ->join('price_categories', 'price_categories.id', '=', 'prices.price_categories_id')
+            ->join('price_categories', 'prices.price_categories_id', '=', 'price_categories.id')
             ->select('price_categories.*')
             ->groupBy('price_categories.id')
+
             ->get();
 
         $prices = Price::with(['priceCategories'])
+
             ->get();
 
 

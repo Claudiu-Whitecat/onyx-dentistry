@@ -189,7 +189,7 @@ header .social-icon {
 
 .container {
     --_container-size: 78.125rem;
-    width: min(100% - 2rem, var(--_container-size));
+    width: min(100% - 2rem, var(--_container-size))!important;;
     margin-inline: auto;
 }
 .container-tight {
