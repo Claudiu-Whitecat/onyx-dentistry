@@ -20,15 +20,18 @@ class PriceController extends Controller
             ->join('price_categories', 'prices.price_categories_id', '=', 'price_categories.id')
             ->select('price_categories.*')
             ->groupBy('price_categories.id')
+            ->get();
+        $priceCurrencies = Price::query()
+            ->join('price_currencies', 'prices.price_currency_id', '=', 'price_currencies.id')
+            ->select('price_currencies.*')
+            ->groupBy('price_currencies.id')
+            ->get();
+        $prices = Price::with(['priceCategories', 'priceCurrencies'])
 
             ->get();
 
-        $prices = Price::with(['priceCategories'])
 
-            ->get();
-
-
-        return view('prices.index', compact('prices', 'priceCategories'));
+        return view('prices.index', compact('prices', 'priceCategories', 'priceCurrencies'));
     }
 
     /**

@@ -3,6 +3,7 @@
 @import "main.css";
 @import "filament/dashboard.css";
 @import "components/buttons.css";
+@import "components/price-item.css";
 @import "../views/components/header/header.css";
 @import "../views/components/footer/footer.css";
 @import "../views/components/cards/cards-services.css";
