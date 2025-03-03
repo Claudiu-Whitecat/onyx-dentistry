@@ -44,7 +44,7 @@ button.js-back--navigation:disabled {
     gap: 0.5rem;
     padding-block: 1rem;
     padding-inline: 2rem;
-    background-color: var(--clr-white);
+    background-color: #ffffff;
     border: 0.0625rem solid grey;
     width: fit-content;
     max-width: 100%;
