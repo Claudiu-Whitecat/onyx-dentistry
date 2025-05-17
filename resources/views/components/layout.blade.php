@@ -19,7 +19,7 @@
     {{-- Loads Barlow Condensed--}}
     @googlefonts('secondary-font')
     @vite('resources/js/app.js')
-
+    @stack('scripts')
     <script src="https://kit.fontawesome.com/038dcaac05.js" defer crossorigin="anonymous"></script>
 
 </head>
@@ -29,3 +29,4 @@
     {{ $slot }}
 </main>
 @include('components.footer.footer')
+

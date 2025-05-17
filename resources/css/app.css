@@ -1,6 +1,7 @@
 @import "reset.css";
 @import "variables.css";
 @import "main.css";
+@import "old-homepage.css";
 @import "filament/dashboard.css";
 @import "components/buttons.css";
 @import "components/price-item.css";

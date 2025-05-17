@@ -11,6 +11,8 @@
     --clr-white: hsl(0, 0%, 100%);
     --clr-black: hsl(0, 0%, 0%);
 
+    --clr-blue: #1b5299;
+
     --clr-grey-100: hsl(0, 0%, 35%);
     --clr-grey-80: hsl(0, 0%, 20%);
     --clr-grey-50: hsl(0, 0%, 50%);

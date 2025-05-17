@@ -1,10 +1,33 @@
+.pricing-headline {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--clr-black);
+}
+.pricing-table td:first-of-type {
+    width: 85%;
+}
+.prices-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 details {
-    max-width: 960px;
-    margin: 1rem auto;
+    /*max-width: 960px;*/
+    margin-inline: auto;
     padding: 1.5rem;
-    background-color: #fff;
-    border-radius: 1rem;
-    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+    background-color: var(--clr-white);
+    border-radius: 0.5rem;
+    border: 1px solid var(--clr-black);
+    max-height: 74px;
+    min-width: fit-content;
+    width: 100%;
+}
+details:first-of-type {
+    margin-block: 1rem 0;
+}
+details[open] {
+    max-height: fit-content;
 }
 details summary {
     display: flex;
@@ -19,22 +42,13 @@ details summary::-webkit-details-marker, details summary::marker {
     display: none;
 }
 details summary::after {
-    content: "+";
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 1;
+    content: "";
+    background: url("../images/down-arrow.svg") center/cover no-repeat;
     margin-right: 1rem;
     cursor: pointer;
-    background-color: rgba(0, 0, 255, .1);
-    padding: 0.75rem;
-    display: grid;
-    place-content: center;
-    aspect-ratio: 1;
-    line-height: 0;
-    position: absolute;
-    top: -0.5rem;
-    right: -1.5rem;
-    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    transition: all 400ms var(--expo-smoothing);
 }
 details *:not(summary) {
     animation-name: fade;
@@ -44,7 +58,9 @@ details[open] summary {
     margin-bottom: 1.5rem;
 }
 details[open] summary::after {
-    content: "−";
+    content: "";
+    transform: rotate(180deg);
+    transition: all 400ms var(--expo-smoothing);
 }
 @keyframes fade {
     0% {
@@ -63,4 +79,7 @@ table thead {
 }
 table tr td {
     padding-block: 0.5rem;
+}
+table tr td:last-of-type {
+    text-align: right;
 }

@@ -59,8 +59,10 @@ class PriceResource extends Resource
             ->columns([
                 TextColumn::make('id')->sortable(),
                 TextColumn::make('name')->limit(50)->sortable(),
-                TextColumn::make('value')->limit(50)->sortable(),
+                TextColumn::make('quantifier')->limit(50),
                 TextColumn::make('priceCategories.name')->label('Category')->limit(50)->sortable(),
+                TextColumn::make('value')->limit(50)->sortable(),
+
                 TextColumn::make('priceCurrencies.name')->label('Currency')->limit(50)->sortable(),
             ])
             ->filters([

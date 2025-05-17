@@ -27,7 +27,7 @@
     </section>
     <section class="header-menu">
         <div class="container  header-navigation">
-            <a href="">
+            <a href="/">
                 <div class="logo-holder">
                     <img class="main-logo mobile" src="{{asset('images/main-logo-portrait.svg')}}" alt="Illustration of a tooth with text: Onyx Dentistry" loading="eager" decoding="async">
                     <img class="main-logo desktop" src="{{asset('images/main-logo-landscape.svg')}}" alt="Illustration of a tooth with text: Onyx Dentistry" loading="eager" decoding="async">
@@ -45,61 +45,61 @@
                             Acasă
                         </x-nav-link>
                     </li>
+{{--                    <li>--}}
+{{--                        <x-nav-link type="anchor" :href="'/blog'"  :active="request()->is('blog')" >--}}
+{{--                            Blog--}}
+{{--                        </x-nav-link>--}}
+{{--                    </li>--}}
+{{--                    <li>--}}
+{{--                        <x-nav-link type="anchor" :href="'doctori'" :active="request()->is('doctori')" >--}}
+{{--                            Doctori--}}
+{{--                        </x-nav-link>--}}
+{{--                    </li>--}}
+{{--                    <li x-data="{open:false}" >--}}
+{{--                        <x-nav-link type="button" :hasSubmenu="true" >--}}
+{{--                            Servicii--}}
+{{--                            <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-dropdown" viewBox="0 0 20 20" fill="currentColor">--}}
+{{--                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />--}}
+{{--                            </svg>--}}
+{{--                        </x-nav-link>--}}
+{{--                        <ul class="dropdown-menu">--}}
+{{--                            <li>--}}
+{{--                                <x-nav-link class="submenu-item" type="anchor" :href="'services/crown-bridges'" :active="request()->is('crown-bridges')" >--}}
+{{--                                    Coroane--}}
+{{--                                </x-nav-link>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <x-nav-link class="submenu-item" type="anchor" :href="'services/crown-bridges'" :active="request()->is('crown-bridges')" >--}}
+{{--                                    Implanturi--}}
+{{--                                </x-nav-link>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <x-nav-link class="submenu-item" type="anchor" :href="'services/crown-bridges'" :active="request()->is('crown-bridges')" >--}}
+{{--                                    Extracii--}}
+{{--                                </x-nav-link>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <x-nav-link class="submenu-item" type="anchor" :href="'services/crown-bridges'" :active="request()->is('crown-bridges')" >--}}
+{{--                                    Coroane--}}
+{{--                                </x-nav-link>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <x-nav-link class="submenu-item" type="anchor" :href="'services/crown-bridges'" :active="request()->is('crown-bridges')" >--}}
+{{--                                    Coroane--}}
+{{--                                </x-nav-link>--}}
+{{--                            </li>--}}
+{{--                        </ul>--}}
+{{--                    </li>--}}
                     <li>
-                        <x-nav-link type="anchor" :href="'/blog'"  :active="request()->is('blog')" >
-                            Blog
-                        </x-nav-link>
-                    </li>
-                    <li>
-                        <x-nav-link type="anchor" :href="'doctori'" :active="request()->is('doctori')" >
-                            Doctori
-                        </x-nav-link>
-                    </li>
-                    <li x-data="{open:false}" >
-                        <x-nav-link type="button" :hasSubmenu="true" >
-                            Servicii
-                            <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-dropdown" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                            </svg>
-                        </x-nav-link>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <x-nav-link class="submenu-item" type="anchor" :href="'services/crown-bridges'" :active="request()->is('crown-bridges')" >
-                                    Coroane
-                                </x-nav-link>
-                            </li>
-                            <li>
-                                <x-nav-link class="submenu-item" type="anchor" :href="'services/crown-bridges'" :active="request()->is('crown-bridges')" >
-                                    Implanturi
-                                </x-nav-link>
-                            </li>
-                            <li>
-                                <x-nav-link class="submenu-item" type="anchor" :href="'services/crown-bridges'" :active="request()->is('crown-bridges')" >
-                                    Extracii
-                                </x-nav-link>
-                            </li>
-                            <li>
-                                <x-nav-link class="submenu-item" type="anchor" :href="'services/crown-bridges'" :active="request()->is('crown-bridges')" >
-                                    Coroane
-                                </x-nav-link>
-                            </li>
-                            <li>
-                                <x-nav-link class="submenu-item" type="anchor" :href="'services/crown-bridges'" :active="request()->is('crown-bridges')" >
-                                    Coroane
-                                </x-nav-link>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <x-nav-link type="anchor" :href="'doctori'" :active="request()->is('prices')" >
+                        <x-nav-link type="anchor" :href="'preturi'" :active="request()->is('prices')" >
                             Prețuri
                         </x-nav-link>
                     </li>
-                    <li>
-                        <x-nav-link type="button" :active="request()->is('contact')" >
-                            Contact
-                        </x-nav-link>
-                    </li>
+{{--                    <li>--}}
+{{--                        <x-nav-link type="button" :active="request()->is('contact')" >--}}
+{{--                            Contact--}}
+{{--                        </x-nav-link>--}}
+{{--                    </li>--}}
                 </ul>
             </nav>
             <button class="button button--cta button--to-form button--tertiary">

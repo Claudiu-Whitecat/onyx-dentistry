@@ -1,0 +1,873 @@
+
+    /* SATOSHI FONTS */
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/static/Satoshi-Light.woff2') format('woff2'),
+    url('/fonts/static/Satoshi-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/static/Satoshi-LightItalic.woff2') format('woff2'),
+    url('/fonts/static/Satoshi-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/static/Satoshi-Regular.woff2') format('woff2'),
+    url('/fonts/static/Satoshi-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/static/Satoshi-Italic.woff2') format('woff2'),
+    url('/fonts/static/Satoshi-Italic.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/static/Satoshi-Medium.woff2') format('woff2'),
+    url('/fonts/static/Satoshi-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/static/Satoshi-MediumItalic.woff2') format('woff2'),
+    url('/fonts/static/Satoshi-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/static/Satoshi-Bold.woff2') format('woff2'),
+    url('/fonts/static/Satoshi-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/static/Satoshi-BoldItalic.woff2') format('woff2'),
+    url('/fonts/static/Satoshi-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/static/Satoshi-Black.woff2') format('woff2'),
+    url('/fonts/static/Satoshi-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/static/Satoshi-BlackItalic.woff2') format('woff2'),
+    url('/fonts/static/Satoshi-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+    font-style: italic;
+}
+
+/* BARLOW CONDENSED FONTS */
+@font-face {
+    font-family: 'Barlow';
+    src: url('/fonts/static/barlowcondensed-thin.woff2') format('woff2'),
+    url('/fonts/static/barlowcondensed-thin.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('/fonts/static/barlowcondensed-thinitalic.woff2') format('woff2'),
+    url('/fonts/static/barlowcondensed-thinitalic.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('/fonts/static/barlowcondensed-extralight.woff2') format('woff2'),
+    url('/fonts/static/barlowcondensed-extralight.woff') format('woff');
+    font-weight: 200;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('/fonts/static/barlowcondensed-extralightitalic.woff2') format('woff2'),
+    url('/fonts/static/barlowcondensed-extralightitalic.woff') format('woff');
+    font-weight: 200;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('/fonts/static/barlowcondensed-light.woff2') format('woff2'),
+    url('/fonts/static/barlowcondensed-light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('/fonts/static/barlowcondensed-lightitalic.woff2') format('woff2'),
+    url('/fonts/static/barlowcondensed-lightitalic.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('/fonts/static/barlowcondensed-regular.woff2') format('woff2'),
+    url('/fonts/static/barlowcondensed-regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('/fonts/static/barlowcondensed-regularitalic.woff2') format('woff2'),
+    url('/fonts/static/barlowcondensed-regularitalic.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('/fonts/static/barlowcondensed-medium.woff2') format('woff2'),
+    url('/fonts/static/barlowcondensed-medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('/fonts/static/barlowcondensed-mediumitalic.woff2') format('woff2'),
+    url('/fonts/static/barlowcondensed-mediumitalic.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('/fonts/static/barlowcondensed-semibold.woff2') format('woff2'),
+    url('/fonts/static/barlowcondensed-semibold.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('/fonts/static/barlowcondensed-semibolditalic.woff2') format('woff2'),
+    url('/fonts/static/barlowcondensed-semibolditalic.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('/fonts/static/barlowcondensed-bold.woff2') format('woff2'),
+    url('/fonts/static/barlowcondensed-bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('/fonts/static/barlowcondensed-bolditalic.woff2') format('woff2'),
+    url('/fonts/static/barlowcondensed-bolditalic.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('/fonts/static/barlowcondensed-extrabold.woff2') format('woff2'),
+    url('/fonts/static/barlowcondensed-extrabold.woff') format('woff');
+    font-weight: 800;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('/fonts/static/barlowcondensed-extrabolditalic.woff2') format('woff2'),
+    url('/fonts/static/barlowcondensed-extrabolditalic.woff') format('woff');
+    font-weight: 800;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('/fonts/static/barlowcondensed-black.woff2') format('woff2'),
+    url('/fonts/static/barlowcondensed-black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('/fonts/static/barlowcondensed-blackitalic.woff2') format('woff2'),
+    url('/fonts/static/barlowcondensed-blackitalic.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+    font-style: italic;
+}
+
+:root {
+    --font-headlines: 'Barlow';
+    --font-copy: 'Satoshi';
+
+    /*--clr-primary: #f2773f;*/
+    /*--clr-blue: #1b5299;*/
+    /*--clr-accent: #dbdbdb;*/
+
+    /*--clr-blue-darker: #016cab;*/
+
+    --clr-borders: #595959;
+    --clr-fields: #f0f0f0;
+    --clr-placeholders: #9a9a9a;
+
+    --clr-error: #d51a52;
+    --clr-approved: #087236;
+    --clr-link: #035A8C;
+
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+
+    --clr-complementary-darker: hsl(0, 0%, 42%);
+    --clr-complementary-lighter: hsl(0, 0%, 94%);
+
+    --fs-milli: 0.75rem;
+    --fs-base: 1rem;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+/* HEADER */
+body {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+p {
+    font-family: var(--font-copy);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+/*button {*/
+/*    font-family: var(--font-copy);*/
+/*    background-color: unset;*/
+/*    border: unset;*/
+/*}*/
+/*.button:disabled {*/
+/*    cursor: not-allowed;*/
+/*}*/
+/*.button {*/
+/*    font-family: var(--font-copy);*/
+/*    cursor: pointer;*/
+/*    display: inline-flex;*/
+/*    !*background-color: var(--clr-blue);*!*/
+/*    background-image: linear-gradient(to right,var(--clr-blue) 51%,var(--clr-primary) 100%);*/
+/*    font-size: 1.25rem;*/
+/*    font-weight: 500;*/
+/*    color: var(--clr-white);*/
+/*    border-radius: 0.25rem;*/
+/*    !*border: 2px solid var(--clr-blue);*!*/
+/*    padding: 0.5rem 1.25rem;*/
+/*    transition: all 300ms cubic-bezier(0.65, 0, 0.35, 1);*/
+/*    background-position: 0 0;*/
+/*    background-size: 200% 100% !important;*/
+/*}*/
+/*.button:hover {*/
+/*    !*background-color: unset;*!*/
+/*    !*color: var(--clr-blue);*!*/
+/*    box-shadow: 1px 1px 10px 1px rgba(34,34,34,.2);*/
+/*    transform: translateY(-3px);*/
+/*    background-position: 99% 0;*/
+/*    transition: all 400ms cubic-bezier(0.65, 0, 0.35, 1);*/
+/*}*/
+
+/*.button--cta:hover {*/
+/*  background-color: var(--clr-blue-darker);*/
+/*  border-color: var(--clr-blue-darker);*/
+/*  color: var(--clr-white);*/
+/*  transition: all 400ms cubic-bezier(0.65, 0, 0.35, 1);*/
+/*}*/
+/*.link-button {*/
+/*    color: var(--clr-link);*/
+/*    text-decoration: underline;*/
+/*}*/
+
+.container-success {
+    max-width: 70rem;
+    background-color: var(--clr-white) ;
+    border: 2px solid var(--clr-black);
+    border-radius: 0.5rem;
+    margin: 2rem auto 4rem auto;
+    padding: 0.5rem 1rem 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.one-line {
+    display: block;
+}
+.decoration {
+    max-width: 200px;
+    width: 100%;
+    position: absolute;
+    top: 71%;
+    left: 33%;
+    transform: rotate(45deg);
+}
+.decorations-starts-container {
+
+    position: absolute;
+    top: 94%;
+    left: 42%;
+}
+.main-heading {
+    font-family: var(--font-headlines);
+    font-weight: 700;
+    color: var(--clr-blue-darker);
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+.main-heading--success {
+    font-family: var(--font-copy);
+    color: var(--clr-black);
+}
+.booking-text .main-heading {
+    font-size: 2.75rem;
+    color: var(--clr-black);
+    text-transform: unset;
+    letter-spacing: calc(2 * 0.01em);
+}
+.main-heading .big-text {
+    font-size: 3.5rem;
+}
+.main-heading .small-text {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--clr-primary);
+    letter-spacing: calc(2 * 0.01em);
+}
+.main-paragraph {
+    font-weight: 500;
+    max-width: 42ch;
+    line-height: 1.44;
+    color: var(--clr-white);
+}
+.main-paragraph--success {
+    color: var(--clr-black);
+    text-align: center;
+    max-width: 52ch;
+}
+.main-text {
+    margin: 1.5rem auto 1rem 0;
+}
+section.booking .main-paragraph {
+    margin: 0 auto 0.5rem 0;
+}
+.grid-equal-columns {
+    --grid-min: 440px;
+    display: grid;
+    grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, var(--grid-min)), 1fr)
+  );
+    height: 100%;
+    place-items: center;
+    margin: 4rem auto 2rem auto;
+    padding: 0 1.25rem;
+}
+.grid-uneven-columns {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 1.75rem;
+    margin: 4rem auto 2rem auto;
+    padding: 0 1.25rem;
+}
+.booking-text {
+    justify-self: self-start;
+}
+.button.cta {
+    margin-top: 2rem;
+}
+
+/* FORM */
+form {
+    font-family: var(--font-copy);
+}
+.form-contact--paragraph {
+    font-size: 1rem;
+    max-width: 52ch;
+    line-height: 1.44;
+    margin: 0 auto 1.25rem 0;
+}
+.form-contact--content {
+    --form-container: 560px;
+    max-width: var(--form-container);
+    width: 100%;
+    margin: 0 auto 1rem 0;
+    display: grid;
+    gap: 1rem 0;
+}
+.form-contact .field {
+    font-family: var(--font-copy);
+    display: grid;
+    gap: 0.5rem 0;
+}
+.form-contact label {
+    font-size: var(--fs-base);
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+}
+.form-contact .field input {
+    border: unset;
+    background-color: var(--clr-fields);
+    color: var(--clr-black);
+    padding: 0.5rem 0px 0.5rem 0.5rem;
+}
+.form-contact .field input:active,
+.form-contact .field input:focus-visible,
+.input-textarea:active,
+.input-textarea:focus-within {
+    outline-color: var(--clr-blue-darker);
+}
+.form-contact .field input::placeholder {
+    color: var(--clr-placeholders);
+}
+.input-textarea {
+    max-width: var(--form-container);
+    min-height: 11.25rem;
+    background-color: var(--clr-fields);
+    color: var(--clr-black);
+    border: unset;
+    padding: 0.5rem 1.75rem 0 0.5rem;
+}
+.form-actions--contact {
+    text-align: left;
+}
+.button-contact-form {
+    font-family: var(--font-copy);
+    cursor: pointer;
+    display: inline-flex;
+    background-color: var(--clr-blue);
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--clr-white);
+    border-radius: 0.25rem;
+    border: 2px solid var(--clr-blue);
+    padding: 0.5rem 1.25rem;
+    transition: all 300ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+.field-radio {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 0.5rem;
+}
+.field-radio label {
+    text-transform: none;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+.icon {
+    --size: 1.5rem;
+    width: var(--size);
+    height: var(--size);
+    position: absolute;
+    top: calc((100% - var(--size)) / 1.5);
+    right: 0.5rem;
+    pointer-events: none;
+    z-index: 2;
+}
+.icon.icon-success {
+    fill: var(--clr-approved);
+}
+.icon.icon-error {
+    fill: var(--clr-error);
+    top: calc((100% - var(--size)) / 1.9);
+}
+.message .icon.icon-error,
+.message .icon.icon-success {
+    top: 2.5rem;
+}
+/* .input::placeholder {
+    color: #a0aec0;
+} */
+
+.form-contact .field .input.input-error,
+.form-contact .field .input.input-error:focus {
+    border: 2px solid var(--clr-error);
+}
+.form-contact .field .input.input-approved,
+.form-contact .field .input.input-approved:focus {
+    border: 2px solid var(--clr-approved);
+}
+.field {
+    /* margin-bottom: 2rem; */
+    position: relative;
+}
+
+.error-message {
+    font-size: 0.85rem;
+    color: var(--clr-error);
+}
+
+.radio-disclaimer {
+    font-size: 1.25rem;
+    font-weight: var(--fw-bold);
+}
+.address {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 1rem;
+    align-items: self-start; */
+    width: 100%;
+}
+.address-grid {
+    --grid-min: 15.95rem;
+    display: grid;
+    grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, var(--grid-min, 20ch)), 1fr)
+  );
+    gap: 0 1rem;
+    align-items: self-start;
+}
+/* .address-schedule {
+    width: 100%;
+    justify-self: self-start;
+    max-width: 100%;
+} */
+
+section.contact .grid-equal-columns {
+    --grid-min: 420px;
+    place-items: self-start;
+    gap: 0 5.5rem;
+}
+.address-schedule {
+    justify-self: self-end;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    gap: 2rem;
+    justify-content: center;
+    align-self: flex-start;
+}
+.schedule .secondary-heading {
+    color: var(--clr-blue);
+    margin-bottom: 0.5rem;
+}
+.schedule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem 0px;
+    width: 100%;
+    max-width: 100%;
+}
+.schedule-day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.25rem 0;
+    border-bottom: 1px solid var(--clr-blue);
+}
+.schedule-day .time {
+    font-weight: var(--fw-bold);
+    color: var(--clr-blue);
+}
+.icon-map {
+    width: 100%;
+    max-width: 2rem;
+}
+.addreess-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 0 1rem 0;
+}
+.address .secondary-heading {
+    color: var(--clr-blue);
+    margin-bottom: 0.5rem;
+    grid-column: 1/-1;
+}
+.map-holder {
+    width: 100%;
+    padding: 0 0 4rem 0;
+}
+.map-holder iframe {
+    width: 100%;
+    height: 420px;
+}
+
+/* REVISIONS */
+
+.billboard {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2.5fr 1fr 1fr;
+    position: relative;
+}
+.billboard > * {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+.billboard .main-heading {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    z-index: 3;
+    place-self: center;
+    max-width: 40ch;
+    margin: 0 0 0.5rem 0;
+    text-align: center;
+    font-size: 4.25rem;
+    color: var(--clr-white);
+}
+.billboard .button {
+    grid-row: 3/4;
+    z-index: 3;
+    justify-self: center;
+    align-self: self-start;
+}
+.bg-image {
+    width: 100%;
+    pointer-events: none;
+}
+.billboard::before {
+    content: '';
+    /* background-color: rgba(0, 0, 0, 0.25); */
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.25) 0%,
+        rgba(0, 0, 0, 0.35) 100%
+    );
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.billboard .main-paragraph {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    text-align: center;
+    justify-self: center;
+    align-self: self-start;
+    z-index: 3;
+}
+.main-paragraph--black {
+    color: var(--clr-black);
+}
+
+.toasts {
+    position: fixed;
+    bottom: 2rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.toast {
+    display: flex;
+    align-items: center;
+    background-color: var(--clr-white);
+    border-radius: 0.35rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    color: var(--clr-black);
+    font-size: 14px;
+    min-width: 500px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transform: translateX(150%);
+    animation: slideIn 4s ease-in-out;
+}
+.toast .title {
+    display: block;
+    font-weight: 700;
+    color: #000000;
+}
+.toast.error {
+    border-left: 5px solid var(--clr-error);
+}
+.toast.error .icon-error path {
+    color: var(--clr-error);
+}
+section.success {
+    padding: 0 0 10rem 0;
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(150%);
+    }
+
+    10%,
+    90% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+.desktop {
+    display: block;
+}
+.mobile {
+    display: none;
+}
+
+/* SUCCESS PAGE */
+
+.wrapper-checkmark {
+    width: 100px;
+    margin: 1rem auto 0 auto;
+}
+
+.checkmark {
+    stroke: green;
+    stroke-dashoffset: 745.74853515625;
+    stroke-dasharray: 745.74853515625;
+    animation: dash 2s ease-out forwards 1;
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 745.74853515625;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@media (max-width: 67.5rem) {
+    .grid-uneven-columns {
+        grid-template-columns: 1fr 1fr;
+    }
+    .form-contact--content {
+        --form-container: 500px;
+    }
+}
+@media (max-width: 57.5rem) {
+    .grid-uneven-columns {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .form-contact--content {
+        --form-container: 650px;
+    }
+    .address-schedule {
+        max-width: 650px;
+        justify-self: center;
+    }
+    .form-wrapper {
+        width: 100%;
+        max-width: 650px;
+    }
+    .billboard {
+        grid-template-rows: 1.25fr 1fr 0.65fr;
+    }
+    .billboard .main-heading {
+        font-size: 3.25rem;
+    }
+}
+@media (max-width: 28.125rem) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .decoration {
+        display: none;
+    }
+    .decorations-starts-container {
+        display: none;
+    }
+    .billboard .main-heading {
+        font-size: 2.5rem;
+    }
+    .billboard .main-paragraph {
+        max-width: 30ch;
+    }
+    .social-links {
+        margin: 0 0 0 auto;
+        width: 20%;
+    }
+    .social-links ul {
+        gap: 0.5rem;
+        margin: 0 0 0 auto;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    .social-link--image {
+        width: 1.25rem;
+        max-width: 1.25rem;
+    }
+    .social-links ul li:nth-of-type(2),
+    .social-links ul li:nth-of-type(4) {
+        flex: 1 1 25%;
+    }
+    .container-success {
+        border: unset;
+    }
+    .main-paragraph--success {
+        max-width: 30ch;
+    }
+    .toast {
+        min-width: 320px;
+        padding: 0.5rem 1.5rem;
+    }
+    .toast .icon {
+        --size: 1.25rem;
+    }
+}
+
+

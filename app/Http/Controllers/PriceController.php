@@ -27,7 +27,7 @@ class PriceController extends Controller
             ->groupBy('price_currencies.id')
             ->get();
         $prices = Price::with(['priceCategories', 'priceCurrencies'])
-
+            ->orderBy('name')
             ->get();
 
 

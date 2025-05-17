@@ -24,46 +24,58 @@ class PriceCategoriesSeeder extends Seeder
                 ],
                 [
                     'id' => 2,
-                    'name' => 'Protetica dentara',
+                    'name' => 'Obturații (Plombe)',
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now(),
                 ],
                 [
                     'id' => 3,
-                    'name' => 'Estetica dentara',
+                    'name' => 'Protetică dentară',
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now(),
                 ],
                 [
                     'id' => 4,
-                    'name' => 'Parodontologie',
+                    'name' => 'Estetica dentara',
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now(),
                 ],
                 [
                     'id' => 5,
-                    'name' => 'Endodontie',
+                    'name' => 'Parodontologie',
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now(),
                 ],
                 [
                     'id' => 6,
-                    'name' => 'Ortodontie',
+                    'name' => 'Endodontie',
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now(),
                 ],
                 [
                     'id' => 7,
-                    'name' => 'Chirurgie',
+                    'name' => 'Ortodontie',
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now(),
                 ],
                 [
                     'id' => 8,
+                    'name' => 'Chirurgie',
+                    'created_at' => Carbon::now(),
+                    'updated_at' => Carbon::now(),
+                ],
+                [
+                    'id' => 9,
                     'name' => 'Implantologie',
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now(),
-                ]
+                ],
+                [
+                    'id' => 10,
+                    'name' => 'Pedodonție',
+                    'created_at' => Carbon::now(),
+                    'updated_at' => Carbon::now(),
+                ],
         ]);
     }
 }

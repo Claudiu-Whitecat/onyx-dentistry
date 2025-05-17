@@ -1,7 +1,7 @@
 @foreach($priceCategories as $priceCategory)
-    <details>
-        <summary>  {{$priceCategory->name}} </summary>
-        <table>
+    <details class="price-details">
+        <summary>{{$priceCategory->name}}</summary>
+        <table class="pricing-table">
             <thead>
             <tr>
                 <td>
@@ -21,11 +21,13 @@
                     <tr>
                         <td>
                             {{$price->name}}
+                            @if($price->quantifier !== null)
+                                ({{$price->quantifier}})
+                            @endif
                         </td>
                         <td>
                             {{$price->value}}
                         </td>
-
                         <td>
                             @foreach($priceCurrencies as $priceCurrency)
                                 @if($price-> price_currency_id == $priceCurrency->id)
@@ -33,13 +35,6 @@
                                 @endif
                             @endforeach
                         </td>
-                        @if($price->quantifier !== null)
-                            <td>
-
-                                {{$price->quantifier}}
-
-                            </td>
-                        @endif
                     </tr>
                 @endif
             @endforeach

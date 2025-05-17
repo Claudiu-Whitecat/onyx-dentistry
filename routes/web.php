@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\PriceController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,9 +16,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('homepage');
-});
-
+    return view('oldHomepage');
+})->name('homepage');
+Route::post('/homepage', [ContactFormController::class, 'submit'])->name('contact.submit');;
+Route::get('/success', function () {
+    return view('success');
+})->name('success');
 Route::group(['prefix'=> 'doctors'], function (){
     Route::get('/', function(){
         return view('doctors.index');
@@ -27,5 +31,5 @@ Route::group(['prefix'=> 'doctors'], function (){
     });
 });
 
-Route::resource( 'prices', PriceController::class)
+Route::resource( 'preturi', PriceController::class)
     ->only(['index', 'show']);
