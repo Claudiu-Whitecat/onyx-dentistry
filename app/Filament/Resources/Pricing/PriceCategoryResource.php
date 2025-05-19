@@ -28,6 +28,9 @@ class PriceCategoryResource extends Resource
                 Fieldset::make('New Category')
                     ->schema([
                         TextInput::make('name')
+                            ->required(),
+                        TextInput::make('weight')
+                            ->integer()
                             ->required()
                     ])
             ]);
@@ -38,8 +41,9 @@ class PriceCategoryResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('id')->sortable(),
+                TextColumn::make('weight')->sortable(),
                 TextColumn::make('name')->limit(50)->sortable(),
-                TextColumn::make('slug')->limit(50),
+
             ])
             ->filters([
                 //

@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('price_categories', function (Blueprint $table) {
             $table->id();
+            $table->integer('weight');
             $table->string('name');
             $table->timestamps();
 

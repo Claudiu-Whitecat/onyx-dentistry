@@ -1,6 +1,8 @@
 @foreach($priceCategories as $priceCategory)
-    <details class="price-details">
-        <summary>{{$priceCategory->name}}</summary>
+
+
+    <div class="price-category" >
+        <h1 class="price-category-name">{{$priceCategory->name}}</h1>
         <table class="pricing-table">
             <thead>
             <tr>
@@ -10,13 +12,10 @@
                 <td>
                     Preț
                 </td>
-                <td>
-                    Monedă
-                </td>
             </tr>
             </thead>
+            <tbody id="list">
             @foreach($prices as $price)
-
                 @if($price->price_categories_id == $priceCategory->id)
                     <tr>
                         <td>
@@ -27,8 +26,6 @@
                         </td>
                         <td>
                             {{$price->value}}
-                        </td>
-                        <td>
                             @foreach($priceCurrencies as $priceCurrency)
                                 @if($price-> price_currency_id == $priceCurrency->id)
                                     {{$priceCurrency->name}}
@@ -38,6 +35,8 @@
                     </tr>
                 @endif
             @endforeach
+            </tbody>
+
         </table>
-    </details>
+    </div>
 @endforeach

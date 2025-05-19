@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class PriceCategory extends Model
 {
     use HasFactory;
-    protected $fillable = ['name'];
+    protected $fillable = ['name', 'weight'];
 
     public function price():HasMany
     {

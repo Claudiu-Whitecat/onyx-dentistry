@@ -10,6 +10,10 @@ class EditPrice extends EditRecord
 {
     protected static string $resource = PriceResource::class;
 
+    protected function  getRedirectUrl(): string
+    {
+        return $this->getResource()::getUrl('index');
+    }
     protected function getHeaderActions(): array
     {
         return [

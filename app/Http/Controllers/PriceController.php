@@ -20,6 +20,7 @@ class PriceController extends Controller
             ->join('price_categories', 'prices.price_categories_id', '=', 'price_categories.id')
             ->select('price_categories.*')
             ->groupBy('price_categories.id')
+            ->orderBy('price_categories.weight', 'asc')
             ->get();
         $priceCurrencies = Price::query()
             ->join('price_currencies', 'prices.price_currency_id', '=', 'price_currencies.id')
