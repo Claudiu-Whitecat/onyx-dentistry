@@ -9,32 +9,9 @@
         <div class="search-box">
             <input type="search" id="searchInput" placeholder="Caută procedură..." class="search-input">
             <div class="search-result">
-{{--                <table class="pricing-table">--}}
-{{--                    <tr>--}}
-{{--                        <td>--}}
-{{--                            Fațetă de compozit--}}
-{{--                        </td>--}}
-{{--                        <td>--}}
-{{--                            300 ron--}}
-{{--                        </td>--}}
-{{--                    </tr>--}}
-{{--                    <tr>--}}
-{{--                        <td>--}}
-{{--                            Fațetă de zirconiu--}}
-{{--                        </td>--}}
-{{--                        <td>--}}
-{{--                            500 ron--}}
-{{--                        </td>--}}
-{{--                    </tr>--}}
-{{--                    <tr>--}}
-{{--                        <td>--}}
-{{--                            Fațetă de aur--}}
-{{--                        </td>--}}
-{{--                        <td>--}}
-{{--                            800 ron--}}
-{{--                        </td>--}}
-{{--                    </tr>--}}
-{{--                </table>--}}
+                <table class="pricing-table">
+
+                </table>
             </div>
         </div>
         <div class="prices-holder">

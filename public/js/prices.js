@@ -1,23 +1,54 @@
 window.onload = () => {
+
+    const itemsPool = document.querySelectorAll('.prices-holder .pricing-table tbody tr');
+    const items = Array.from(itemsPool);
     const searchInput = document.getElementById('searchInput');
-    const itemsPool = document.querySelector('.prices-holder');
-    const items = itemsPool.querySelectorAll('.pricing-table tr');
-    const searchResults = document.querySelector('.search-result');
+    const resultsContainer = document.querySelector('.search-result table');
 
-    searchInput.addEventListener('input', function () {
-        const searchValue = searchInput.value.toLowerCase();
+    function debounce(func, wait) {
+        let timeout;
+        return function(...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), wait);
+        };
+    };
+    const debouncedSearch = debounce(() => {
+        const query = searchInput.value.trim();
+        const results = search(query);
+        displayResults(results);
+    }, 300);
 
-        items.forEach(item => {
-            if (searchValue.includes(item.innerText)) {
-                searchResults.innerText = item.innerText;
+    function normalizeString(str) {
+        return str
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .toLowerCase();
+    };
+    function search(query) {
+        return items.filter(item =>
+            normalizeString(item.innerHTML).includes(normalizeString(query))
+        );
+    }
+
+    function displayResults(results) {
+        resultsContainer.innerHTML = '';
+
+        if (results.length === 0) {
+            resultsContainer.innerHTML = '<p class="query-text">Nu am găsit această procedură</p>';
+            return;
+        }
+
+        results.forEach(item => {
+            const itemElement = document.createElement('tr');
+            itemElement.classList.add('item');
+            itemElement.innerHTML = item.innerHTML;
+            resultsContainer.appendChild(itemElement);
+            if (searchInput.value === '') {
+                resultsContainer.innerHTML = '';
             }
+        });
+    }
 
-        })
-
-        // for (let i = 0; i < items.length; i++) {
-        //     const item = items[i];
-        //     const itemName = item.textContent.toLowerCase();
-        // }
-    });
+    searchInput.addEventListener('input', debouncedSearch);
 
 }

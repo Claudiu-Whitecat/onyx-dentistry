@@ -19,6 +19,9 @@
 .search-result {
     margin-block: 1rem 0;
 }
+.query-text {
+    font-weight: 500;
+}
 .prices-holder {
     display: flex;
     flex-direction: column;
