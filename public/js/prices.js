@@ -1,5 +1,7 @@
 window.onload = () => {
 
+    const priceDetail = document.querySelector('.price-category:first-of-type');
+    priceDetail.setAttribute('open', 'open');
     const itemsPool = document.querySelectorAll('.prices-holder .pricing-table tbody tr');
     const items = Array.from(itemsPool);
     const searchInput = document.getElementById('searchInput');
@@ -37,7 +39,9 @@ window.onload = () => {
             resultsContainer.innerHTML = '<p class="query-text">Nu am găsit această procedură</p>';
             return;
         }
-
+        if (results.length > 0) {
+            resultsContainer.innerHTML = '<p class="query-text-result">Proceduri găsite:</p>';
+        }
         results.forEach(item => {
             const itemElement = document.createElement('tr');
             itemElement.classList.add('item');

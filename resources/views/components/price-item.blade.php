@@ -1,8 +1,8 @@
 @foreach($priceCategories as $priceCategory)
-
-
-    <div class="price-category" >
-        <h1 class="price-category-name">{{$priceCategory->name}}</h1>
+    <details class="price-category"  >
+        <summary>
+            <h1 class="price-category-name">{{$priceCategory->name}}</h1>
+        </summary>
         <table class="pricing-table">
             <thead>
             <tr>
@@ -38,5 +38,5 @@
             </tbody>
 
         </table>
-    </div>
+    </details>
 @endforeach

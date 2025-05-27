@@ -33,7 +33,7 @@
     transition: all 300ms var(--ease-out-sine);
 }
 .link-button {
-    font-size: var(--fs-480);
+    font-size: var(--fs-380);
     color: var(--clr-black);
     position: relative;
     cursor: pointer;
