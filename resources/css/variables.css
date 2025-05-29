@@ -6,7 +6,7 @@
 
     --clr-primary: 	hsl(0, 100%, 66%);
     --clr-secondary: hsl(257, 73%, 74%);
-    --clr-tertiary: hsl(179, 64%, 54%);
+    --clr-tertiary: #c8e4f6;
 
     --clr-white: hsl(0, 0%, 100%);
     --clr-black: hsl(0, 0%, 0%);
@@ -32,7 +32,7 @@
     source-sans-pro;
 
     /* FONT-FAMILIES */
-    --ff-base: 'Inter', var(--system-fonts), sans-serif;
+    --ff-base: 'Manrope', var(--system-fonts), sans-serif;
     --ff-headlines: 'Barlow Condensed', var(--system-fonts), sans-serif;
 
     /* FONT-WEIGHTS */

@@ -106,3 +106,19 @@ details.price-category > summary::-webkit-details.price-category-marker {
 .pricing-page table tr td:last-of-type {
     text-align: right;
 }
+
+@media screen and (max-width: 450px) {
+    .pricing-subheadline {
+        font-size: 1rem;
+        max-width: 34ch;
+    }
+    .prices-holder {
+        gap: 2rem;
+    }
+    .pricing-table td:first-of-type {
+        width: 75%;
+    }
+    .price-category-name {
+        font-size: 1.5rem;
+    }
+}

@@ -14,7 +14,7 @@
     <!-- FONTS -->
     {{-- Loads Default Font - Poppins --}}
     @googlefonts
-    {{-- Loads Inter--}}
+    {{-- Loads Manrope--}}
     @googlefonts('primary-font')
     {{-- Loads Barlow Condensed--}}
     @googlefonts('secondary-font')

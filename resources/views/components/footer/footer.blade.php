@@ -1,150 +1,89 @@
 <footer>
     <div class="container">
         <div class="footer_content">
+            <div class="brand-details">
+                <img class="main-logo " src="{{asset('images/main-logo-landscape.svg')}}" src="/_nuxt/home-hero.BO4CeNfa.png" alt="Illustration of a tooth with text: Onyx Dentistry" loading="eager" decoding="async">
+                <p>
+                    Your trusted partner in comprehensive healthcare. Discover quality health to meet your needs.
+                </p>
+                <div class="cta-holder">
+                    <a href="" class="button bg-white">
+                        <span>
+                            Our services
+                        </span>
+                    </a>
+                    <a href="" class="link ">
+                        Book Appointment
+                        <span class="link-decoration" aria-hidden="true">
+                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 4L9 4M9 4L5.5 0.5M9 4L5.5 7.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <x-social-media-nav>
+
+                </x-social-media-nav>
+            </div>
             <nav class="footer_navigation" aria-label="Onyx Dentistry Secondary Navigation">
                 <ul  class="footer-navigation_holder">
                     <li class="footer-navigation_header">
                         <p>Resurse</p>
                     </li>
                     <li role="menuitem">
-                        <x-nav-link class="footer_link body-regular" type="anchor" :href="'/blog'"  :active="request()->is('blog')" >
+                        <a class="footer_link body-regular" type="anchor" :href="'/blog'"  :active="request()->is('blog')" >
                             Blog
-                        </x-nav-link>
+                        </a>
                     </li>
                     <li role="menuitem">
-                        <x-nav-link class="footer_link body-regular" type="anchor" :href="'/doctori'"  :active="request()->is('doctori')" >
+                        <a class="footer_link body-regular" type="anchor" :href="'/doctori'"  :active="request()->is('doctori')" >
                             Doctori
-                        </x-nav-link>
+                        </a>
                     </li>
                     <li role="menuitem">
-                        <x-nav-link class="footer_link body-regular" type="anchor" :href="'/servicii'"  :active="request()->is('servicii')" >
+                        <a class="footer_link body-regular" type="anchor" :href="'/servicii'"  :active="request()->is('servicii')" >
                             Servicii
-                        </x-nav-link>
+                        </a>
                     </li>
                     <li role="menuitem">
-                        <x-nav-link class="footer_link body-regular" type="anchor" :href="'/preturi'"  :active="request()->is('preturi')" >
+                        <a class="footer_link body-regular" type="anchor" :href="'/preturi'"  :active="request()->is('preturi')" >
                             Prețuri
-                        </x-nav-link>
+                        </a>
                     </li>
                     <li role="menuitem">
-                        <x-nav-link class="footer_link body-regular" type="anchor" :href="'/contact'"  :active="request()->is('contact')" >
+                        <a class="footer_link body-regular" type="anchor" :href="'/contact'"  :active="request()->is('contact')" >
                             Contact
-                        </x-nav-link>
-                    </li>
-                </ul>
-                <ul  class="footer-navigation_holder">
-                    <li class="footer-navigation_header">
-                        <p>Date de contact</p>
-                    </li>
-                    <li role="menuitem">
-                        <p class="footer-navigation_text">
-                            Adresă
-                        </p>
-                        <p>
-                            București, Str. Turda 118, Bloc 37
-                        </p>
-                    </li>
-                    <li role="menuitem">
-                        <p class="footer-navigation_text">
-                            Telefon
-                        </p>
-                        <p>
-                            <a class="link-button " href="tel:0765928071">0765.928.071</a>
-                        </p>
-                    </li>
-                    <li role="menuitem">
-                        <p class="footer-navigation_text">
-                            Email
-                        </p>
-                        <p>
-                            <a class="link-button" href="mailto:contact@onyx-dentistry.ro" target="_blank">
-                                contact@onyx-dentistry.ro</a>
-                        </p>
-                    </li>
-                </ul>
-                <ul  class="footer-navigation_holder">
-                    <li class="footer-navigation_header">
-                        <p>Locație</p>
-                    </li>
-                    <li>
-                        <img alt="Placeholder image" class="placeholder-map" src="{{asset('images/placeholder-map.png')}}"/>
-                    </li>
-                </ul>
-                <ul  class="footer-navigation_holder">
-                    <li class="footer-navigation_header">
-                        <p>Program</p>
-                    </li>
-                    <li>
-                        <ol class="open-hours--holder">
-                            <li class="open-hours">
-                                <div class="week-day footer-navigation_text">
-                                    Luni
-                                </div>
-                                <div class="time-frame">
-                                    10:00 - 22:00
-                                </div>
-                            </li>
-                            <li class="open-hours">
-                                <div class="week-day footer-navigation_text">
-                                    Marți
-                                </div>
-                                <div class="time-frame">
-                                    10:00 - 22:00
-                                </div>
-                            </li>
-                            <li class="open-hours">
-                                <div class="week-day footer-navigation_text">
-                                    Miercuri
-                                </div>
-                                <div class="time-frame">
-                                    10:00 - 22:00
-                                </div>
-                            </li>
-                            <li class="open-hours">
-                                <div class="week-day footer-navigation_text">
-                                    Joi
-                                </div>
-                                <div class="time-frame">
-                                    10:00 - 22:00
-                                </div>
-                            </li>
-                            <li class="open-hours">
-                                <div class="week-day footer-navigation_text">
-                                    Vineri
-                                </div>
-                                <div class="time-frame">
-                                    10:00 - 22:00
-                                </div>
-                            </li>
-                            <li class="open-hours">
-                                <div class="week-day footer-navigation_text">
-                                    Sâmbătă
-                                </div>
-                                <div class="time-frame">
-                                    12:00 - 16:00
-                                </div>
-                            </li>
-                            <li class="open-hours">
-                                <div class="week-day footer-navigation_text">
-                                    Duminică
-                                </div>
-                                <div class="time-frame">
-                                    Închis
-                                </div>
-                            </li>
-                        </ol>
+                        </a>
                     </li>
                 </ul>
             </nav>
         </div>
-        <div class="footer_copyright">
+
+    </div>
+    <div class="footer_copyright">
+        <div class="container footer_copyright-content">
             <p class="body-regular">
                 &#169; 2023 - <?= date("Y") ?>
             </p>
-            <x-social-media-nav>
-
-            </x-social-media-nav>
+            <nav class="" aria-label="Onyx Dentistry Secondary Navigation">
+                <ul  class="footer-navigation-legal">
+                    <li role="menuitem">
+                        <a class="footer_link body-regular" type="anchor" :href="'/blog'"  :active="request()->is('blog')" >
+                            Termeni & Condiții
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a class="footer_link body-regular" type="anchor" :href="'/doctori'"  :active="request()->is('doctori')" >
+                            Cookies
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a class="footer_link body-regular" type="anchor" :href="'/doctori'"  :active="request()->is('doctori')" >
+                            ANPC
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
-
 </footer>

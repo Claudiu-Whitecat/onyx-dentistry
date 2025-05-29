@@ -4,8 +4,11 @@
             <div class="nav-wrapper">
                 <a href="/">
                     <div class="logo-holder">
-                        <img class="main-logo mobile" src="{{asset('images/main-logo-portrait.svg')}}" alt="Illustration of a tooth with text: Onyx Dentistry" loading="eager" decoding="async">
-                        <img class="main-logo desktop" src="{{asset('images/main-logo-landscape.svg')}}" alt="Illustration of a tooth with text: Onyx Dentistry" loading="eager" decoding="async">
+                        <picture>
+                            <source srcset="{{asset('images/main-logo-portrait.svg')}}" media="(max-width: 450px)">
+                            <source srcset="{{asset('images/main-logo-landscape.svg')}}" media="(min-width: 459px)" >
+                            <img class="main-logo " src="{{asset('images/main-logo-landscape.svg')}}" src="/_nuxt/home-hero.BO4CeNfa.png" alt="Illustration of a tooth with text: Onyx Dentistry" loading="eager" decoding="async">
+                        </picture>
                     </div>
                 </a>
                 <div class="nav-divider"></div>
@@ -97,7 +100,9 @@
                                     </ul>
                                 </nav>
                 </div>
-                <a href="" class="cta-button">Programează-te</a>
+                <a href="" class="button button--tertiary bg-tertiary ">
+                        <span>Programează-te</span>
+                </a>
             </div>
 {{--            <x-social-media-nav>--}}
 

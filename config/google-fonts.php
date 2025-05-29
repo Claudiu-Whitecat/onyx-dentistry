@@ -8,7 +8,7 @@ return [
      */
     'fonts' => [
         'default' => "fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap",
-        'primary-font' => "fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap",
+        'primary-font' => "fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap",
         'secondary-font' => "fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;0,900;1,700&family=Inter:wght@500&display=swap",
     ],
 
