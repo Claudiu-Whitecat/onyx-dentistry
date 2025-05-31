@@ -180,8 +180,13 @@ span.one_line {
     transform: translateX(-100%);
     opacity: 0;
     transition: all 0.5s var(--expo-smoothing);
-}
 
+}
+.animated-underscore:hover::after{
+    visibility: visible;
+    transform: scaleX(1);
+    opacity: 0.75;
+}
 
 .primary-navigation_holder {
     display: flex;

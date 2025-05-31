@@ -260,6 +260,10 @@ a.link-button:hover:before {
     .nav-wrapper.right-nav {
         display: none;
     }
+    .hamburger-menu ~ .nav-wrapper.right-nav {
+
+        animation: slideIn 300ms var(--expo-smoothing) reverse;
+    }
 
     .hamburger-menu.is-active ~ .nav-wrapper.right-nav {
         display: flex;
@@ -268,14 +272,33 @@ a.link-button:hover:before {
         top: 100%;
         background-color:#f9f9f9;
         width: 100%;
-        height: 100vh;
+        height: fit-content;
         left: 0;
         z-index: 10;
+        padding: 2rem 1rem;
+        gap: 1.25rem;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        transform: translateY(0);
+        animation: slideIn 300ms var(--expo-smoothing);
     }
+    @keyframes slideIn {
+        0% {
+            display: none;
+            transform: translateY(-100%);
+        }
+        1% {
+            display: flex;
+            transform: translateY(-100%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
     .primary-navigation_holder {
         flex-direction: column;
         align-items: flex-start;
-        padding: 2rem 1rem;
+
         gap: 1rem;
     }
     .header_primary-navigation {
@@ -305,9 +328,16 @@ a.link-button:hover:before {
     .main-logo {
         width: 8rem;
     }
+    .nav-wrapper .button--tertiary{
+        text-align: center;
+        width: 100%;
+    }
 }
 @media screen and (max-width: 480px) {
     .main-logo {
         width: 4rem;
+    }
+    .header-info-bar {
+        padding-inline: 1.25rem;
     }
 }

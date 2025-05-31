@@ -72,14 +72,14 @@
             </nav>
             <div class="contact-details">
                 <p>
-                    <a href="https://www.google.com/maps/place/Onyx+Dentistry/@44.4603121,26.0710752,17z/data=!3m1!4b1!4m6!3m5!1s0x40b2038edd03bd21:0x759bbf091cb29cb6!8m2!3d44.4603121!4d26.0710752!16s%2Fg%2F11sclthyf9?entry=ttu&g_ep=EgoyMDI1MDUyNy4wIKXMDSoASAFQAw%3D%3D">
+                    <a class="animated-underscore" href="https://www.google.com/maps/place/Onyx+Dentistry/@44.4603121,26.0710752,17z/data=!3m1!4b1!4m6!3m5!1s0x40b2038edd03bd21:0x759bbf091cb29cb6!8m2!3d44.4603121!4d26.0710752!16s%2Fg%2F11sclthyf9?entry=ttu&g_ep=EgoyMDI1MDUyNy4wIKXMDSoASAFQAw%3D%3D">
                         București, Str. Turda Nr. 118, Bloc 37 (în cadrul Smile Up)
                     </a>
                 </p>
-                <a href="mailto:contact@onyx-dentistry.ro" class="footer-link">contact@onyx-dentistry.ro</a>
-                <a href="tel:0765928071" class="footer-link">+(40)765.928.071
+                <a href="mailto:contact@onyx-dentistry.ro" class="footer-link animated-underscore">contact@onyx-dentistry.ro</a>
+                <a href="tel:0765928071" class="footer-link animated-underscore">+(40)765.928.071
                 </a>
-                <a class="link" href="/contact">
+                <a class="link animated-underscore" href="/contact">
                    Contactează-ne   <span class="link-decoration" aria-hidden="true">
                             <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 4L9 4M9 4L5.5 0.5M9 4L5.5 7.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>

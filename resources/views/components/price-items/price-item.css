@@ -111,6 +111,9 @@ details.price-category > summary::-webkit-details.price-category-marker {
 }
 
 @media screen and (max-width: 450px) {
+    .pricing-page {
+        padding-inline: 1.25rem;
+    }
     .pricing-subheadline {
         font-size: 1rem;
         max-width: 34ch;
