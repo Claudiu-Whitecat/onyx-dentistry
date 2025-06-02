@@ -1,14 +1,17 @@
-.pricing-page {
-    padding-block: 2rem 4rem;
-}
+
 .pricing-headline {
     font-size: 2rem;
     font-weight: 700;
-    text-align: center;
+    line-height: 1;
+    text-align: left;
     color: var(--clr-black);
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+
 }
 .pricing-subheadline {
-    font-size: 1.15rem;
+    font-size: 1rem;
     margin-block: 1rem;
 }
 .search-box {
@@ -35,6 +38,7 @@
     flex-direction: column;
     gap: 3rem;
     max-width: 54rem;
+    padding-block: 0 5rem;
 }
 .price-category-name {
     font-size: 1.75rem;
@@ -111,9 +115,7 @@ details.price-category > summary::-webkit-details.price-category-marker {
 }
 
 @media screen and (max-width: 450px) {
-    .pricing-page {
-        padding-inline: 1.25rem;
-    }
+
     .pricing-subheadline {
         font-size: 1rem;
         max-width: 34ch;
@@ -122,9 +124,9 @@ details.price-category > summary::-webkit-details.price-category-marker {
         gap: 2rem;
     }
     .pricing-table td:first-of-type {
-        width: 75%;
+        width: 70%;
     }
     .price-category-name {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 }

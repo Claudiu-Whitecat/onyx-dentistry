@@ -30,6 +30,14 @@ Route::group(['prefix'=> 'doctors'], function (){
         return view('doctors.template');
     });
 });
+Route::group(['prefix'=> 'servicii'], function (){
+    Route::get('/', function(){
+        return view('services.index');
+    });
+    Route::get('/serviciu', function() {
+        return view('services.template');
+    });
+});
 
 Route::resource( 'preturi', PriceController::class)
     ->only(['index', 'show']);

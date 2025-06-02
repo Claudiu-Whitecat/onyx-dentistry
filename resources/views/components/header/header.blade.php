@@ -88,7 +88,7 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <x-nav-link type="anchor" :href="'preturi'" :active="request()->is('preturi')" >
+                                            <x-nav-link type="anchor" :href="'/preturi'" :active="request()->is('preturi')" >
                                                 Prețuri
                                             </x-nav-link>
                                         </li>

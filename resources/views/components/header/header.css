@@ -337,7 +337,5 @@ a.link-button:hover:before {
     .main-logo {
         width: 4rem;
     }
-    .header-info-bar {
-        padding-inline: 1.25rem;
-    }
+
 }

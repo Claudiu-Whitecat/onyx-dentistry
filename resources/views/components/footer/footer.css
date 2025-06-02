@@ -217,7 +217,7 @@ footer {
         align-items: center;
         flex-direction: column;
         padding-block: 2.5rem 2rem;
-        padding-inline: 1.25rem;
+
     }
     .footer_navigation {
         align-items: self-start;

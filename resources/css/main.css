@@ -219,7 +219,25 @@ span.one_line {
 }
 
 /* TYPOGRAPHY STYLES  */
-
+.page-title {
+    padding-block: 3.75rem;
+}
+.page-title .title {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+.page-title .subtitle {
+    font-size: 2rem;
+    font-weight: var(--fw-bold);
+    line-height: 1;
+    text-align: left;
+    color: var(--clr-black);
+    margin-block: 1rem;
+}
 .headline-primary {
     font-size: var(--fs-750);
     font-weight: var(--fw-regular);
@@ -426,17 +444,7 @@ span.one_line {
     animation-timing-function: linear;
     animation-iteration-count: 1;
 }
-.hero-holder {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto;
-    align-items: center;
-}
-.main-image {
-    grid-column: 2/3;
-    grid-row: 1/3;
-    margin-block: 0 -6.25rem;
-}
+
 @keyframes  animation-buzz-out{
     10%{
         transform: translateX(0.1875rem) rotate(2deg);
@@ -509,6 +517,75 @@ span.one_line {
     gap: 0 2rem;
 }
 
+.form-container {
+    background-color: #c8e4f6;
+    padding-block: 5rem;
+}
+.markdown-container {
+    padding-block: 0 5rem;
+}
+.markdown-container .main-image {
+    border-radius:0.625rem;
+    margin-block: 0 2rem;
+}
+.markdown-container .main-image img {
+    border-radius:0.625rem;
+    object-fit: cover;
+    width: 100%;
+    min-height: 600px;
+    max-height: 600px;
+}
+.markdown-container h1,
+.markdown-container h2,
+.markdown-container h3,
+.markdown-container h4,
+.markdown-container h5,
+.markdown-container h6 {
+    color: var(--clr-black);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-block: 0 0.75rem;
+
+}
+
+.markdown-container h1 {
+    font-size: 2rem;
+}
+.markdown-container h2 {
+    font-size: 1.75rem;
+}
+.markdown-container h3 {
+    font-size: 1.5rem;
+}
+.markdown-container h4 {
+    font-size: 1.25rem;
+}
+.markdown-container h5,
+.markdown-container h6{
+    font-size: 1rem;
+}
+.markdown-container ul,
+.markdown-container ol{
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    margin-block: 1.25rem;
+    padding-inline: 1.875rem 0;
+}
+.markdown-container ul {
+    list-style: disc;
+}
+.markdown-container ol  {
+    list-style: decimal;
+}
+.markdown-container img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 600px;
+    border-radius: 0.625rem;
+    object-fit: cover;
+    margin-block: 1.5rem 2rem;
+}
 @media (hover: hover) and (pointer: fine) {
     .button:hover {
         transition: all 400ms var(--ease-in-sine);
@@ -693,8 +770,9 @@ span.one_line {
 
 /*}*/
 @media screen and (max-width: 450px) {
-    /* HEADER */
-
+    .page-title {
+        padding-block: 2.5rem 2rem;
+    }
 
 }
 @media screen and (max-width: 365px) {
