@@ -61,27 +61,27 @@
                                             </x-nav-link>
                                             <ul class="dropdown-menu hidden">
                                                 <li>
-                                                    <x-nav-link class="submenu-item" type="anchor" :href="'services/crown-bridges'" :active="request()->is('crown-bridges')" >
+                                                    <x-nav-link class="submenu-item" type="anchor" :href="'servicii/template'" :active="request()->is('servicii/template')" >
                                                         Coroane
                                                     </x-nav-link>
                                                 </li>
                                                 <li>
-                                                    <x-nav-link class="submenu-item" type="anchor" :href="'services/crown-bridges'" :active="request()->is('crown-bridges')" >
+                                                    <x-nav-link class="submenu-item" type="anchor" :href="'servicii/template'" :active="request()->is('servicii/template')" >
                                                         Implanturi
                                                     </x-nav-link>
                                                 </li>
                                                 <li>
-                                                    <x-nav-link class="submenu-item" type="anchor" :href="'services/crown-bridges'" :active="request()->is('crown-bridges')" >
+                                                    <x-nav-link class="submenu-item" type="anchor" :href="'servicii/template'" :active="request()->is('crown-bridges')" >
                                                         Extracii
                                                     </x-nav-link>
                                                 </li>
                                                 <li>
-                                                    <x-nav-link class="submenu-item" type="anchor" :href="'services/crown-bridges'" :active="request()->is('crown-bridges')" >
+                                                    <x-nav-link class="submenu-item" type="anchor" :href="'servicii/template'" :active="request()->is('crown-bridges')" >
                                                         Coroane
                                                     </x-nav-link>
                                                 </li>
                                                 <li>
-                                                    <x-nav-link class="submenu-item" type="anchor" :href="'services/crown-bridges'" :active="request()->is('crown-bridges')" >
+                                                    <x-nav-link class="submenu-item" type="anchor" :href="'servicii/template'" :active="request()->is('crown-bridges')" >
                                                         Coroane
                                                     </x-nav-link>
                                                 </li>

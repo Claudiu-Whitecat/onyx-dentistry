@@ -22,7 +22,7 @@ Route::post('/homepage', [ContactFormController::class, 'submit'])->name('contac
 Route::get('/success', function () {
     return view('success');
 })->name('success');
-Route::group(['prefix'=> 'doctors'], function (){
+Route::group(['prefix'=> 'doctori'], function (){
     Route::get('/', function(){
         return view('doctors.index');
     });
@@ -34,7 +34,7 @@ Route::group(['prefix'=> 'servicii'], function (){
     Route::get('/', function(){
         return view('services.index');
     });
-    Route::get('/serviciu', function() {
+    Route::get('/template', function() {
         return view('services.template');
     });
 });
