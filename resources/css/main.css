@@ -586,6 +586,21 @@ span.one_line {
     object-fit: cover;
     margin-block: 1.5rem 2rem;
 }
+.markdown-container blockquote {
+    background-color: var(--clr-tertiary);
+    text-align: center;
+    border: 0 solid #000;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 40px;
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+.markdown-container a {
+    color: inherit;
+    text-decoration: underline;
+}
 @media (hover: hover) and (pointer: fine) {
     .button:hover {
         transition: all 400ms var(--ease-in-sine);
@@ -630,6 +645,14 @@ span.one_line {
 @media screen and (max-width: 77.5rem) {
     .modal_container {
         max-width: 50rem;
+    }
+}
+@media screen and (max-width: 980px) {
+    .markdown-container blockquote {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        font-size: 16px;
     }
 }
 /*@media screen and (max-width: 57.5rem) {*/

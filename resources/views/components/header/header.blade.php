@@ -60,11 +60,13 @@
 
                                             </x-nav-link>
                                             <ul class="dropdown-menu hidden">
+                                                @foreach($services as $service)
                                                 <li>
-                                                    <x-nav-link class="submenu-item" type="anchor" :href="'servicii/template'" :active="request()->is('servicii/template')" >
-                                                        Coroane
+                                                    <x-nav-link class="submenu-item" type="anchor" href="{{ url('/servicii', $service->slug) }}" :active="request()->is('servicii/{{$service->slug}}')" >
+                                                        {{$service->title}}
                                                     </x-nav-link>
                                                 </li>
+                                                @endforeach
                                                 <li>
                                                     <x-nav-link class="submenu-item" type="anchor" :href="'servicii/template'" :active="request()->is('servicii/template')" >
                                                         Implanturi

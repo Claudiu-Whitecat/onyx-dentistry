@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\PriceController;
+use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -41,3 +42,5 @@ Route::group(['prefix'=> 'servicii'], function (){
 
 Route::resource( 'preturi', PriceController::class)
     ->only(['index', 'show']);
+
+Route::resource( 'servicii', ServiceController::class);
