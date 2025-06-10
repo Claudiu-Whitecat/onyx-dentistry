@@ -18,6 +18,7 @@ class ServicesSeeder extends Seeder
             [
                 [
                     'slug' => 'surgical-services',
+                    'weight' => 1,
                     'title' => 'Surgical Services',
                     'imagePath' => 'images/services/placeholder-01.jpg',
                     'body' => '# Preventive Health Screenings
@@ -43,6 +44,7 @@ Our comprehensive range of healthcare services is designed to address all aspect
                 ],
                 [
                     'slug' => 'test2',
+                    'weight' => 2,
                     'title' => 'test2',
                     'imagePath' => 'images/blalala2.jpg',
                     'body' => 'dsadasdasdsa da dasd asda dasdasdasdas',
@@ -51,6 +53,7 @@ Our comprehensive range of healthcare services is designed to address all aspect
                 ],
                 [
                     'slug' => 'test3',
+                    'weight' => 3,
                     'title' => 'test3',
                     'imagePath' => 'images/blalala3.jpg',
                     'body' => 'dsadasdasdsa da dasd3232 asda dasdasdasdas',

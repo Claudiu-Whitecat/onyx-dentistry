@@ -62,31 +62,12 @@
                                             <ul class="dropdown-menu hidden">
                                                 @foreach($services as $service)
                                                 <li>
-                                                    <x-nav-link class="submenu-item" type="anchor" href="{{ url('/servicii', $service->slug) }}" :active="request()->is('servicii/{{$service->slug}}')" >
+                                                    <x-nav-link class="submenu-item" type="anchor" href="{{ url('/servicii', $service->slug) }}" :active="request()->is(url('/servicii', $service->slug))" >
                                                         {{$service->title}}
                                                     </x-nav-link>
                                                 </li>
                                                 @endforeach
-                                                <li>
-                                                    <x-nav-link class="submenu-item" type="anchor" :href="'servicii/template'" :active="request()->is('servicii/template')" >
-                                                        Implanturi
-                                                    </x-nav-link>
-                                                </li>
-                                                <li>
-                                                    <x-nav-link class="submenu-item" type="anchor" :href="'servicii/template'" :active="request()->is('crown-bridges')" >
-                                                        Extracii
-                                                    </x-nav-link>
-                                                </li>
-                                                <li>
-                                                    <x-nav-link class="submenu-item" type="anchor" :href="'servicii/template'" :active="request()->is('crown-bridges')" >
-                                                        Coroane
-                                                    </x-nav-link>
-                                                </li>
-                                                <li>
-                                                    <x-nav-link class="submenu-item" type="anchor" :href="'servicii/template'" :active="request()->is('crown-bridges')" >
-                                                        Coroane
-                                                    </x-nav-link>
-                                                </li>
+
                                             </ul>
                                         </li>
                                         <li>

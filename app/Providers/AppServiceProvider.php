@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\Service;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Schema;
@@ -27,6 +28,7 @@ class AppServiceProvider extends ServiceProvider
         FilamentAsset::register([
             Css::make('custom-stylesheet', __DIR__ . '/../../resources/css/filament/dashboard.css'),
         ]);
+        Model::unguard();
         if (Schema::hasTable('services')) { // Ensures the table exists before querying
             $services = Service::latest()->take(10)->get();
             View::share('services', $services);

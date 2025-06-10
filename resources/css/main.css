@@ -601,6 +601,9 @@ span.one_line {
     color: inherit;
     text-decoration: underline;
 }
+.markdown-container p {
+    margin-block: 0 1rem;
+}
 @media (hover: hover) and (pointer: fine) {
     .button:hover {
         transition: all 400ms var(--ease-in-sine);

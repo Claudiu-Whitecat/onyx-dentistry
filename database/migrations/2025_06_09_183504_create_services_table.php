@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->id();
+            $table->integer('weight');
             $table->string('slug')->unique();
             $table->string('title');
             $table->string('imagePath');
