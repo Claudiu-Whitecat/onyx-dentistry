@@ -29,21 +29,21 @@
     @endphp
 
 <footer>
-    <div class="container">
+    <div class="container container-wide">
         <div class="footer_content">
             <div class="brand-details">
                 <img class="main-logo " src="{{asset('images/main-logo-landscape.svg')}}" src="/_nuxt/home-hero.BO4CeNfa.png" alt="Illustration of a tooth with text: Onyx Dentistry" loading="eager" decoding="async">
                 <p>
-                    Your trusted partner in comprehensive healthcare. Discover quality health to meet your needs.
+                    Partenerul dumneavoastră de încredere în domeniul sănătății stomatologice. Descoperiți servicii medicale de calitate care să vă satisfacă nevoile.
                 </p>
                 <div class="cta-holder">
-                    <a href="" class="button bg-white">
+                    <a href="{{ url('/servicii') }}" class="button bg-white">
                         <span>
-                            Our services
+                            Serviciile noastre
                         </span>
                     </a>
                     <a href="" class="link ">
-                        Book Appointment
+                        Programează-te
                         <span class="link-decoration" aria-hidden="true">
                             <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 4L9 4M9 4L5.5 0.5M9 4L5.5 7.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
@@ -91,7 +91,7 @@
 
     </div>
     <div class="footer_copyright">
-        <div class="container footer_copyright-content">
+        <div class="container container-wide footer_copyright-content">
             <p class="body-regular">
                 &#169; 2023 - <?= date("Y") ?>
             </p>

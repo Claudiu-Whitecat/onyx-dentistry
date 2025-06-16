@@ -8,6 +8,7 @@ use App\Filament\Resources\BlogPostResource\RelationManagers;
 use App\Models\Blog\BlogPost;
 use Filament\Forms\Components\Grid;
 use Filament\Forms\Components\Group;
+use Filament\Forms\Components\MarkdownEditor;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Select;
@@ -23,6 +24,7 @@ use Filament\Tables\Columns\CheckboxColumn;
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+use Illuminate\Mail\Markdown;
 use Illuminate\Support\Str;
 
 class BlogPostResource extends Resource
@@ -56,10 +58,11 @@ class BlogPostResource extends Resource
                                 ->live(onBlur: true),
 
                             Select::make('Category')
+                                ->label('Category')
                                 ->required()
                                 ->relationship('category', 'name'),
 
-                            RichEditor::make('content')
+                            MarkdownEditor::make('content')
                                 ->required()
                                 ->columnSpan($span = 2),
                         ]),
@@ -83,6 +86,8 @@ class BlogPostResource extends Resource
                                             ->relationship('tags', 'name'),
                                         Select::make('Author')
                                             ->label('Author')
+                                            ->options(BlogPost::all()->pluck('name', 'id'))
+                                            ->multiple()
                                             ->required()
                                             ->relationship('author', 'name'),
                                         Toggle::make('is_published')

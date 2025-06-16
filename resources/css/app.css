@@ -1,9 +1,12 @@
 @import "reset.css";
 @import "variables.css";
 @import "main.css";
+@import 'services.css';
+@import 'blog.css';
 /*@import "old-homepage.css";*/
 @import "filament/dashboard.css";
 /*@import "components/buttons.css";*/
+@import "../views/components/cta-banner/cta-banner.css";
 @import "../views/components/price-items/price-item.css";
 @import "../views/components/header/header.css";
 @import "../views/components/footer/footer.css";

@@ -1,5 +1,5 @@
 
-    if(document.querySelector('.pricing-page')) {
+if(document.querySelector('.pricing-page')) {
         const priceDetail = document.querySelector('.price-category:first-of-type');
         priceDetail.setAttribute('open', 'open');
         const itemsPool = document.querySelectorAll('.prices-holder .pricing-table tbody tr');
@@ -15,6 +15,7 @@
             };
         };
         const debouncedSearch = debounce(() => {
+
             const query = searchInput.value.trim();
             const results = search(query);
             displayResults(results);

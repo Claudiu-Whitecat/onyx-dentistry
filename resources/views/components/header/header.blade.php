@@ -1,6 +1,6 @@
 <header role="banner">
     <section class="header-info-bar">
-        <div class="container  header-info--content">
+        <div class="container container-wide header-info--content">
             <div class="nav-wrapper">
                 <a href="/">
                     <div class="logo-holder">
@@ -60,10 +60,10 @@
 
                                             </x-nav-link>
                                             <ul class="dropdown-menu hidden">
-                                                @foreach($services as $service)
+                                                @foreach($resources as $resource)
                                                 <li>
-                                                    <x-nav-link class="submenu-item" type="anchor" href="{{ url('/servicii', $service->slug) }}" :active="request()->is(url('/servicii', $service->slug))" >
-                                                        {{$service->title}}
+                                                    <x-nav-link class="submenu-item" type="anchor" href="{{ url('/servicii', $resource->slug) }}" :active="request()->is(url('/servicii', $resource->slug))" >
+                                                        {{$resource->title}}
                                                     </x-nav-link>
                                                 </li>
                                                 @endforeach

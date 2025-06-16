@@ -31,16 +31,18 @@ Route::group(['prefix'=> 'doctori'], function (){
         return view('doctors.template');
     });
 });
-Route::group(['prefix'=> 'servicii'], function (){
-    Route::get('/', function(){
-        return view('services.index');
-    });
-    Route::get('/template', function() {
-        return view('services.template');
-    });
-});
+//Route::group(['prefix'=> 'servicii'], function (){
+//    Route::get('/', function(){
+//        return view('services.index');
+//    });
+//    Route::get('/template', function() {
+//        return view('services.template');
+//    });
+//});
 
 Route::resource( 'preturi', PriceController::class)
     ->only(['index', 'show']);
 
 Route::resource( 'servicii', ServiceController::class);
+
+Route::resource('blog', BlogController::class);

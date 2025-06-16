@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Models\Service;
+use App\Models\Resource;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
@@ -29,9 +29,9 @@ class AppServiceProvider extends ServiceProvider
             Css::make('custom-stylesheet', __DIR__ . '/../../resources/css/filament/dashboard.css'),
         ]);
         Model::unguard();
-        if (Schema::hasTable('services')) { // Ensures the table exists before querying
-            $services = Service::latest()->take(10)->get();
-            View::share('services', $services);
+        if (Schema::hasTable('resources')) { // Ensures the table exists before querying
+            $resources = Resource::take(8)->orderBy('resources.weight', 'asc')->get();
+            View::share('resources', $resources);
         }
     }
 }

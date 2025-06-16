@@ -1,9 +1,51 @@
 <x-layout>
-    @foreach($services as $service)
-        <a href="/servicii/{{$service->slug}}">
-            {{$service->title}}
-        </a>
+    <section class="services">
+        <div class="container">
+            <div class="page-title">
+                <h1 class="pricing-headline">
+                    <span>
+                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.05078 2.75C6.05078 11 15.9508 11 15.9508 19.25" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.9508 2.75C15.9508 11 6.05078 11 6.05078 19.25" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.08594 3.57499H15.9126" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.0957 6.87502H14.9057" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.9126 18.425H6.08594" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.8507 15.125H7.0957" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
 
-    @endforeach
+                    </span>
+                    Servicii
+                </h1>
+                <p class="pricing-subheadline">
+                    Clinica noastră dentară oferă o gamă variată de servicii pentru sănătatea dentară. Medicii noștri se dedică noilor studii din domeniu și urmăresc avansurile tehnologice pentru a adauga constant noi servicii în portofoliul nostru.
+                </p>
+            </div>
+            <ul class="service-cards">
+                @foreach($resources as $resource)
+                <li class="service-card">
+                    <a href="{{ url('/servicii', $resource->slug) }}">
+                        <div class="service-image">
+                            <img src="/storage/{{$resource->imagePath}}"/>
+                        </div>
+                        <div class="service-footer">
+                            <h2 class="service-title">
+                                {{$resource->weight}}
+                                {{$resource->title}}</h2>
+                            <a class="service-cta" href="{{ url('/servicii', $resource->slug) }}">
+                              <span class="link-decoration" aria-hidden="true">
+                                <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L9 4M9 4L5.5 0.5M9 4L5.5 7.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                              </span>
+                            </a>
+                        </div>
+                    </a>
+
+                </li>
+                @endforeach
+            </ul>
+        </div>
+    </section>
+
 
 </x-layout>

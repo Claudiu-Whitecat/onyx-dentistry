@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Service;
+use App\Models\Price\Price;
+use App\Models\Resource;
 use Illuminate\Http\Request;
 use League\CommonMark\CommonMarkConverter;
 
@@ -11,11 +12,19 @@ class ServiceController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-       return view('services.index', [
-           'services' => Service::latest()->paginate(10),
-       ]);
+        $resource = Resource::query()
+            ->select('resources.*')
+            ->groupBy('resources.id')
+            ->orderBy('resources.weight', 'asc')
+            ->paginate(12);
+
+
+        return view('services.index', [
+            'resources' => $resource,
+        ]);
+
     }
 
     /**
@@ -37,18 +46,18 @@ class ServiceController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Service $service, $slug)
+    public function show(Resource $resource, $slug)
     {
         $converter = new CommonMarkConverter();
-        $service = Service::where('slug', $slug)->firstOrFail();
-        $service->body = $converter->convertToHtml($service->body);
-        return view('services.show', compact('service'));
+        $resource = Resource::where('slug', $slug)->firstOrFail();
+        $resource->body = $converter->convertToHtml($resource->body);
+        return view('services.show', compact('resource'));
 
     }
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Service $service)
+    public function edit(Resource $resource)
     {
         //
     }
@@ -56,7 +65,7 @@ class ServiceController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Service $service)
+    public function update(Request $request, Resource $service)
     {
         //
     }
@@ -64,7 +73,7 @@ class ServiceController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Service $service)
+    public function destroy(Resource $service)
     {
         //
     }

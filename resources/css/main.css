@@ -63,6 +63,12 @@ button.js-back--navigation:disabled {
     max-height: 20px;
     line-height: 1;
 }
+.link .link-decoration.black {
+    border: 1px solid var(--clr-black);
+}
+.link .link-decoration.black svg path {
+    stroke: var(--clr-black);
+}
 .link .link-decoration svg path {
     stroke: var(--clr-white);
 }
@@ -83,6 +89,7 @@ button.js-back--navigation:disabled {
     stroke: var(--clr-black);
     transition: all 400ms var(--expo-smoothing);
 }
+
 .button > span {
     z-index: 3;
     position: relative;
@@ -202,15 +209,15 @@ span.one_line {
 }
 
 .container {
-    --_container-size: 78.125rem;
+    --_container-size: 1380px;
     width: min(100% - 2rem, var(--_container-size))!important;;
     margin-inline: auto;
 }
 .container-tight {
-    --_container-size: 65.625rem;
+    --_container-size: 1050px;
 }
 .container-wide {
-    --_container-size: 100%;
+    --_container-size: 1480px;
 }
 
 .main-gradient {
@@ -650,12 +657,34 @@ span.one_line {
         max-width: 50rem;
     }
 }
+@media screen and (min-width: 1920px) {
+    .container {
+        --_container-size: 1480px;
+    }
+}
 @media screen and (max-width: 980px) {
     .markdown-container blockquote {
         margin-top: 20px;
         margin-bottom: 20px;
         padding: 20px;
         font-size: 16px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .markdown-container h1 {
+        font-size: 1.75rem;
+    }
+    .markdown-container .main-image img {
+        min-height: 280px;
+        max-height: 280px;
+        margin-block: 0 2rem;
+    }
+    .markdown-container ul, .markdown-container ol {
+        padding-inline: 1.25rem 0;
+    }
+    .markdown-container ol li p,
+    .markdown-container ul li p{
+        margin-block: 0;
     }
 }
 /*@media screen and (max-width: 57.5rem) {*/

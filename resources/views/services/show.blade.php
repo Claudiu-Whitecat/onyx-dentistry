@@ -1,7 +1,7 @@
 
 
 <x-layout>
-    <section class="service-innerpage">
+    <section class="resource-innerpage">
         <div class="container">
             <div class="page-title">
                 <span class="title">
@@ -15,21 +15,25 @@
                             <path d="M14.8507 15.125H7.0957" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </span>
-                    Servicii
+                    <a href="{{url('/servicii')}}">Servicii</a>
                 </span>
-                <h1 class="subtitle">{{$service->title}}</h1>
+                <h1 class="subtitle">{{$resource->title}}</h1>
             </div>
             <div class="markdown-container">
                 <div class="main-image">
                     <img
-                        src="{{asset($service->imagePath)}}"
+                        src="/storage/{{$resource->imagePath}}"
+
                        alt="Main image of current article" loading="eager" decoding="async"/>
                 </div>
-                {!! markdownToHtml($service->body) !!}
+                {!! markdownToHtml($resource->body) !!}
 
 
             </div>
         </div>
+
+    </section>
+    <section class="other-posts">
 
     </section>
     <section class="form-container">
