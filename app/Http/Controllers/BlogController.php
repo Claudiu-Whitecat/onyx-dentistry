@@ -21,7 +21,7 @@ class BlogController extends Controller
             ->select('blog_authors.*')
             ->groupBy('blog_authors.id')
             ->get();
-        $blogPosts = BlogPost::with('category')
+        $blogPosts = BlogPost::with('blog_category_id')
             ->select('blog_posts.*')
             ->groupBy('blog_posts.id')
             ->orderByDesc('blog_posts.created_at')
@@ -38,7 +38,7 @@ class BlogController extends Controller
     {
         $converter = new CommonMarkConverter();
         $blogPost::where('slug', $slug)->firstOrFail();
-        $blogPost->content = $converter->convertToHtml($blogPost->content);
+//        $blogPost->content = $converter->convertToHtml($blogPost->content);
         return view('blog.show', [
 
             'blogPost' => $blogPost,

@@ -15,6 +15,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        $this->call([
+            FilamentUsers::class,
+            PriceCategoriesSeeder::class,
+            PriceCurrenciesSeeder::class,
+            PricesSeeder::class,
+            ResourcesSeeder::class,
+            DoctorSeeder::class,
+        ]);
     }
 }

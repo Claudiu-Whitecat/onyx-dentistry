@@ -60,7 +60,7 @@ class BlogPostResource extends Resource
                             Select::make('Category')
                                 ->label('Category')
                                 ->required()
-                                ->relationship('category', 'name'),
+                                ->relationship('blog_category_id', 'name'),
 
                             MarkdownEditor::make('content')
                                 ->required()
@@ -82,12 +82,11 @@ class BlogPostResource extends Resource
                                         Select::make('tags')
                                             ->label('Tags')
                                             ->required()
-                                            ->multiple()
                                             ->relationship('tags', 'name'),
                                         Select::make('Author')
                                             ->label('Author')
                                             ->options(BlogPost::all()->pluck('name', 'id'))
-                                            ->multiple()
+
                                             ->required()
                                             ->relationship('author', 'name'),
                                         Toggle::make('is_published')

@@ -19,7 +19,7 @@ class BlogPost extends Model implements HasMedia
         'is_published' => 'boolean',
     ];
 
-    public function category(): BelongsTo
+    public function blog_category_id(): BelongsTo
     {
         return $this->belongsTo(BlogCategory::class, 'blog_category_id');
     }

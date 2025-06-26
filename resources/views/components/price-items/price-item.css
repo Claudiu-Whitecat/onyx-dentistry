@@ -90,27 +90,27 @@ details.price-category[open] summary::after {
 details.price-category > summary::-webkit-details.price-category-marker {
     display: none;
 }
-.pricing-page table {
+.prices-holder table {
     width: 100%;
     margin-block: 0 2rem;
 }
-.pricing-page table thead {
+.prices-holder table thead {
     font-weight: 700;
 }
-.pricing-page table thead tr {
+.prices-holder table thead tr {
     background-color: rgba(255,255,255, 1)!important;
 }
-.pricing-page table tr td {
+.prices-holder table tr td {
     padding: 0.5rem;
     border: 1px solid;
 }
 .pricing-table td:first-of-type {
     width: 85%;
 }
-.pricing-page table tr:nth-of-type(odd) {
+.prices-holder table tr:nth-of-type(odd) {
     background-color: #f9fafb;
 }
-.pricing-page table tr td:last-of-type {
+.prices-holder table tr td:last-of-type {
     text-align: right;
 }
 

@@ -41,4 +41,7 @@ section.cta-banner .cta-holder .button svg {
         width: 100%;
         height: 2px;
     }
+    section.cta-banner .cta-holder .button {
+        padding-inline: 0.5rem;
+    }
 }

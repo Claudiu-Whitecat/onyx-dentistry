@@ -17,28 +17,11 @@ class ResourcesSeeder extends Seeder
         DB::table('resources')->insert(
             [
                 [
-                    'slug' => 'surgical-services',
+                    'slug' => 'ortodontie',
                     'weight' => 1,
-                    'title' => 'Surgical Services',
-                    'imagePath' => 'images/services/placeholder-01.jpg',
-                    'body' => '# Preventive Health Screenings
-                    At our clinic, we offer a comprehensive range of healthcare services designed to meet the diverse needs of our patients. Our experienced team of healthcare professionals is committed to providing personalized care and support to help you achieve your health goals. From preventive care and wellness programs to specialized treatments and therapies, we are dedicated to delivering high-quality healthcare services that prioritize your well-being.
-
-Our comprehensive range of healthcare services is designed to address all aspects of your health, from preventive care to specialized treatments, we\'re here to support you every step of the way.
-
-- Healthy eating for vibrant living
-- Mental wellness nurturing emotional health
-- Wellness wisdom holistic health tips
-- Mindful living cultivating inner balance
-
-## Advanced Health Support
-
-1. Healthy eating for vibrant living
-2. Mental wellness nurturing emotional health
-3. Wellness wisdom holistic health tips
-4. Mindful living cultivating inner balance
-
->Discover a new level of healthcare excellence with B-Well. Our dedicated team of healthcare professionals is committed to providing personalized care and support to help you achieve your health goals. With a focus on compassion, expertise',
+                    'title' => 'Ortodonție',
+                    'imagePath' => '01JXF4SWKR29KF25BZAFXT0X48.jpg',
+                    'body' => "# Zâmbetul perfect începe cu ortodonția: Descoperă serviciile noastre specializate\n\nOrtodonția este ramura stomatologiei care se ocupă cu diagnosticarea, prevenirea și corectarea poziției dinților și a maxilarelor. În cabinetul nostru stomatologic, oferim tratamente ortodontice moderne și personalizate, menite să îți îmbunătățească nu doar aspectul zâmbetului, ci și sănătatea orală pe termen lung.\n\n## De ce este importantă ortodonția?\n\nUn zâmbet aliniat corect nu este doar estetic. Dinții înghesuiți, spațiați sau mușcăturile incorecte pot duce la:\n\n- dificultăți în masticație și vorbire,\n- igienă orală dificilă și risc crescut de carii,\n- dureri mandibulare sau tulburări articulare (ATM).\n\nPrin tratamente ortodontice eficiente, prevenim aceste probleme și restabilim echilibrul funcțional al cavității orale.\n\n### Tipuri de tratamente ortodontice disponibile\n\n1. **Aparat dentar metalic clasic** – opțiunea cea mai accesibilă, potrivită pentru toate vârstele.\n\n2. **Aparat dentar ceramic** – discret și eficient, ideal pentru pacienții care își doresc un zâmbet estetic în timpul tratamentului.\n\n3. **Alignere transparente (Invisalign sau echivalent)** – soluția invizibilă, confortabilă și detașabilă, preferată mai ales de adulți.\n\n4. **Aparate ortodontice pentru copii** – tratamente timpurii care ghidează dezvoltarea corectă a danturii.\n\n![](http://127.0.0.1:8000/storage/WqJ9jIA0vHndCOWVeR08AyqfwzQTxkznp2YTweh2.jpg)\n\n### Cum decurge tratamentul ortodontic?\n\n- **Consultație inițială** – analizăm poziția dinților și mușcătura cu ajutorul radiografiilor și amprentelor digitale.\n- **Plan de tratament personalizat** – alegem tipul de aparat potrivit și estimăm durata tratamentului.\n- **Aplicarea aparatului dentar** – într-o singură ședință, fără durere.\n- **Controale periodice** – ajustări lunare și monitorizarea progresului.\n- **Faza de contenție** – după îndepărtarea aparatului, purtăm un aparat de contenție pentru menținerea rezultatelor.\n\n> **Programează-te acum pentru o consultație ortodontică!**\n> \n>Zâmbetul la care ai visat este mai aproape decât crezi.",
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now(),
                 ],

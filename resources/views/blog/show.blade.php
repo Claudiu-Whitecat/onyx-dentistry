@@ -1,10 +1,9 @@
 <x-layout>
-    <section class="blog-inner">
+    <section class="blog blog-inner">
         <div class="container">
-            {{$blogCategory->name}}
-            {{$blogPost->title}}
-            {{$blogPost->content}}
-            {{$blogAuthor->name}}
+            <div class="markdown-container">
+                {{$blogPost->content}}
+            </div>
         </div>
     </section>
 </x-layout>

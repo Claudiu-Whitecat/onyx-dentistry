@@ -15,6 +15,37 @@
                 </p>
             </div>
             <ul class="blog-cards">
+
+                @foreach($blogPosts as $blogPost)
+
+                    <li class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="images/blog-post-placeholder.jpg"/>
+                        </div>
+                        <h2 class="blog-card-title">
+                            {{$blogPost->title}}
+                        </h2>
+                        <p class="blog-card-date">
+                            {{$blogPost->created_at}}
+                        </p>
+                        <p class="blog-card-fragment">
+                            Prioritizing self-care to achieve harmony between your professional and personal roles.
+                        </p>
+                        <div class="blog-card-footer">
+                    <span class="blog-card-category" data-type="1">
+                 {{$blogPost->category}}
+                    </span>
+                            <a href="{{ url('/blog', $blogPost->slug) }}" class="blog-card-cta link">
+                                Citește
+                                <span class="link-decoration black" aria-hidden="true">
+                                <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4L9 4M9 4L5.5 0.5M9 4L5.5 7.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                              </span>
+                            </a>
+                        </div>
+                    </li>
+                @endforeach
                 <li class="blog-card">
                     <div class="blog-card-image">
                         <img src="images/blog-post-placeholder.jpg"/>

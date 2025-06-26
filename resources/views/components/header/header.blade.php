@@ -36,17 +36,17 @@
                                 <nav class="header_primary-navigation" aria-label="Onyx Dentistry Main Navigation">
                                     <ul role="menubar" class="primary-navigation_holder">
                                         <li role="none">
-                                            <x-nav-link type="anchor" :href="'/'" :active="request()->is('/')" >
+                                            <x-nav-link type="anchor" href="{{ url('/') }}" :active="request()->is('/')" >
                                                 Acasă
                                             </x-nav-link>
                                         </li>
                                         <li>
-                                            <x-nav-link type="anchor" :href="'/blog'"  :active="request()->is('blog')" >
+                                            <x-nav-link type="anchor" href="{{ url('/blog') }}" :active="request()->is('blog')" >
                                                 Blog
                                             </x-nav-link>
                                         </li>
                                         <li>
-                                            <x-nav-link type="anchor" :href="'doctori'" :active="request()->is('doctori')" >
+                                            <x-nav-link type="anchor" href="{{ url('/doctori') }}" :active="request()->is('doctori')" >
                                                 Doctori
                                             </x-nav-link>
                                         </li>
@@ -71,12 +71,12 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <x-nav-link type="anchor" :href="'/preturi'" :active="request()->is('preturi')" >
+                                            <x-nav-link type="anchor" href="{{ url('/preturi') }}" :active="request()->is('preturi')" >
                                                 Prețuri
                                             </x-nav-link>
                                         </li>
                                         <li>
-                                            <x-nav-link type="button" :active="request()->is('contact')" >
+                                            <x-nav-link type="anchor" href="{{ url('/contact') }}" :active="request()->is('contact')" >
                                                 Contact
                                             </x-nav-link>
                                         </li>

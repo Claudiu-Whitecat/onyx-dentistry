@@ -23,14 +23,16 @@ Route::post('/homepage', [ContactFormController::class, 'submit'])->name('contac
 Route::get('/success', function () {
     return view('success');
 })->name('success');
-Route::group(['prefix'=> 'doctori'], function (){
-    Route::get('/', function(){
-        return view('doctors.index');
-    });
-    Route::get('/template', function() {
-        return view('doctors.template');
-    });
-});
+//Route::group(['prefix'=> 'doctori'], function (){
+//    Route::get('/', function(){
+//        return view('doctors.index');
+//    });
+//    Route::get('/show', function() {
+//        return view('doctors.show');
+//    });
+//});
+Route::get('/doctori', [\App\Http\Controllers\DoctorController::class, 'index'])->name('doctor.index');
+Route::get('/doctori/{slug}', [\App\Http\Controllers\DoctorController::class, 'show'])->name('doctor.show');
 //Route::group(['prefix'=> 'servicii'], function (){
 //    Route::get('/', function(){
 //        return view('services.index');

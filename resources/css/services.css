@@ -63,3 +63,8 @@ section.services .service-card:hover .link-decoration svg {
     transform: rotate(-45deg);
     transition: all 400ms var(--expo-smoothing);
 }
+@media screen and (max-width: 450px) {
+    section.services .service-footer {
+        padding: 14px 10px;
+    }
+}

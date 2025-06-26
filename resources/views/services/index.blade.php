@@ -29,7 +29,7 @@
                         </div>
                         <div class="service-footer">
                             <h2 class="service-title">
-                                {{$resource->weight}}
+
                                 {{$resource->title}}</h2>
                             <a class="service-cta" href="{{ url('/servicii', $resource->slug) }}">
                               <span class="link-decoration" aria-hidden="true">
